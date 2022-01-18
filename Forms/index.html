@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+
+    <div>
+        <h2>Marathon Form</h2>
+        <p>Fill the below form to get yourself register for the Marathon </p>
+        <!-- start of marathon form -->
+        <form action="submitted.html" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Marathon Form</legend>
+                <!-- start of personal information input -->
+                <label for="firstName">First Name:</label>
+                <input type="text" placeholder="Enter your first name" id="firstName" required autofocus><br>
+                <label for="lastName">Last Name:</label>
+                <input type="text" placeholder="Enter your last name" id="lastName" required><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required><br>
+                <label for="birthDate">Input your Birthdate and time</label>
+                <input type="datetime-local" id="birthDate"><br>
+
+                <label for="phone">Enter a phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                    required>
+
+                <!-- end of perfsonal information input -->
+                <!-- user otp button -->
+                <input type="button" value="Generate OTP"> <br>
+                <label for="otp">Enter OTP:</label>
+                <!-- end otp  -->
+                <input type="password" name="otp" id="otp" placeholder="Enter OTP" minlength="4" maxlength="4"
+                    required><br>
+                <label for="file">Upload E-Aadhar:</label>
+                <input type="file" name="file" id="file"> <br>
+                <p>Select the Lenght of Marathon:</p>
+                <input type="radio" name="marathonLenght" id="1K" checked>
+                <label for="1K">1 Kilometer</label>
+                <input type="radio" name="marathonLenght" id="5K">
+                <label for="5K">5 Kilometers</label>
+                <input type="radio" name="marathonLenght" id="10K">
+                <label for="10K">10 Kilometer</label><br>
+                <input type="checkbox" id="insurance">
+                <label for="insurance">Check if you have Medical Insurance</label>
+                <input type="hidden" id="participantsId" name="custId" value="313"><br>
+                <label for="address">Enter address:</label>
+                <textarea name="address" id="address" style="resize: none;" required></textarea><br>
+                <label for="age">Select your age-group</label>
+                <select name="age" id="age">
+                    <option value="kids">5-13</option>
+                    <option value="teens">16-21</option>
+                    <option value="adults">21 and above</option>
+                </select><br>
+                <label for="interval">Suggest Water Interval(kms)</label>
+                <input type="number" name="interval" id="interval" min="1" max="3" required value="1"><br>
+                <p>Select the colour of t-shirt <input type="color"><br></p>
+                <label for="difficulty">Rate difficulty to fill this form(0-5):</label>
+                <input type="range" id="vol" name="vol" min="0" max="5">
+                
+                <!--Button to check Validation -->
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </fieldset>
+        </form>
+        <!-- end of marathon form -->
+    </div>
+</body>
+
+</html>
