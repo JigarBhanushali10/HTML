@@ -1,0 +1,80 @@
+// Global styles goes here
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+//   font-size: 1rem;
+ 
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Josefin Sans', sans-serif; // make variable
+
+}
+
+// flex styles
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+.flex-shrink-0 {
+  flex-grow: 0;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+// flex styles ends
+
+// position classes start
+.position-relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-vertical {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+// position classes end
+
+// height width class start
+
+.h-100 {
+  height: 100%;
+}
+.w-100 {
+  width: 100%;
+}
+// height width class end
