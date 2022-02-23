@@ -11,8 +11,12 @@ html,body{
     height: 100%;
     
 }
+body{
+    overflow: hidden;
+
+}
 /* using iconmoon */
-@font-face {
+/* @font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?ii03bv');
     src:  url('../fonts/icomoon.eot?ii03bv#iefix') format('embedded-opentype'),
@@ -26,24 +30,24 @@ html,body{
   
   [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
+    /* font-family: 'icomoon' !important;
     speak: never;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
-    line-height: 1;
+    line-height: 1; */
   
     /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
+    /* -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 .icons{font-size: 16x;
-  color: #959595;
+ 
 }
   
-.icon-help-circle:before {
+/* .icon-help-circle:before {
     content: "\e901";
   }
   .icon-shield:before {
@@ -68,7 +72,7 @@ html,body{
         font-size: 13.25px;
         
         
-    }
+    } */ 
     .icon-search{
         background-color: #ffffff;
         border: 1px solid #f6f5f9;
@@ -81,9 +85,9 @@ html,body{
     .icon-search:hover{
         background-color: #eff3f9;;
     }
-    .icon-compare:before{
+    /* .icon-compare:before{
         content: "\e907";
-    }
+    } */
     
     .icon-compare {
     margin-bottom: 4rem;
@@ -154,8 +158,8 @@ html,body{
 .wrapper{
     border-radius: 10px;
     margin: auto;
-    width: 1200px;
-    margin-top: 100px;
+    /* width: 1200px; */
+    /* margin-top: 100px; */
     background-color: #ffffff;
     box-shadow:0 0 1000px grey;
     
@@ -222,14 +226,21 @@ border:none
     border-right: 1px solid #eff3f9;
     height: 100vh;
     overflow-y:scroll;
+<<<<<<< HEAD
     overflow-x: hidden;
     width: 200px; */
+
+    overflow-x: auto;
+/* >>>>>>> 7984bf6869f2980bd4e8f47e85c06e37872020a2 */
    
 }
 .sidenav-list{
 padding-top: 80px;
+/* <<<<<<< HEAD */
 /* margin: auto; */
 padding-left: 25%;
+/* ======= */
+/* >>>>>>> 7984bf6869f2980bd4e8f47e85c06e37872020a2 */
 
 padding-right: 25%;
 
@@ -241,7 +252,7 @@ padding-bottom: 80px;
 
 }
 input[type=text]{
-    width: 600px;   
+    width: 900px;   
     height: 25px;
     border: 1px solid #f6f5f9;
     border-radius: 4px;
@@ -266,11 +277,17 @@ h6{
     width: 150px;
     
 }
-
+/* .icons:hover{
+    color:#434441 ;
+} */
 
     
-.sidenav-list :hover{
-    color:#434441 ;
+/* .sidenav-list li:hover{
+    color:#8fc71f;
+    background-color: #eff3f9;
+} */
+ li:hover{
+    color:#8fc71f;
     background-color: #eff3f9;
 }
 .content{
