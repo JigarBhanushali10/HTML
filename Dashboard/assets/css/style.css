@@ -226,21 +226,18 @@ border:none
     border-right: 1px solid #eff3f9;
     height: 100vh;
     overflow-y:scroll;
-<<<<<<< HEAD
+
     overflow-x: hidden;
     width: 200px; */
 
     overflow-x: auto;
-/* >>>>>>> 7984bf6869f2980bd4e8f47e85c06e37872020a2 */
    
 }
 .sidenav-list{
 padding-top: 80px;
-/* <<<<<<< HEAD */
-/* margin: auto; */
+
 padding-left: 25%;
-/* ======= */
-/* >>>>>>> 7984bf6869f2980bd4e8f47e85c06e37872020a2 */
+
 
 padding-right: 25%;
 
