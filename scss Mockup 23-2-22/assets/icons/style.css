@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'app';
-  src:  url('fonts/app.eot?k6g5o8');
-  src:  url('fonts/app.eot?k6g5o8#iefix') format('embedded-opentype'),
-    url('fonts/app.ttf?k6g5o8') format('truetype'),
-    url('fonts/app.woff?k6g5o8') format('woff'),
-    url('fonts/app.svg?k6g5o8#app') format('svg');
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?u5ykxg');
+  src:  url('fonts/icomoon.eot?u5ykxg#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?u5ykxg') format('truetype'),
+    url('fonts/icomoon.woff?u5ykxg') format('woff'),
+    url('fonts/icomoon.svg?u5ykxg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,7 +12,7 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'app' !important;
+  font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -58,9 +58,6 @@
 .icon-radix_dashboard:before {
   content: "\e90a";
 }
-.icon-square:before {
-  content: "\e90b";
-}
 .icon-show_chart:before {
   content: "\e90d";
 }
@@ -69,4 +66,7 @@
 }
 .icon-search:before {
   content: "\e986";
+}
+.icon-square:before {
+  content: "\e90e";
 }

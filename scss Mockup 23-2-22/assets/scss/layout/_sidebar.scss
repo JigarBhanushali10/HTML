@@ -1,0 +1,27 @@
+.sidebar {
+  width: 100px;
+  padding:.25rem ;
+
+  #toggleCheckbox {
+    display: none;
+  }
+  .toggle-checkbox-label {
+    right: -16%;
+    top: 50%;
+  }
+  .nav-links {
+    .nav-list {
+      .nav {
+        &-item {
+          padding: 1rem ;
+          margin: 1rem ;
+        }
+        &-active{
+            .icon-radix_dashboard{
+                color: $primary;
+            }
+        }
+      }
+    }
+  }
+}

@@ -6,9 +6,13 @@ $success: #8bc38a;
 $danger: #e43536;
 $warning: #dc9909;
 $info: #83bcbd;
-$icon-color:#abb1bf;
 $white: #ffffff;
 
+// icon
+
+$icon-color: #abb1bf;
+$icon-container-bg-primary-color: #edf4ff;
+$icon-container-bg-info-color: #f3f9f9;
 
 
 // text color
@@ -16,55 +20,72 @@ $text-color: #160e4d;
 $muted-text: #9fa9bc;
 
 // border
-$border-bottom-color:#e2e2e2;
+$border-color: #e2e2e2;
 
 // Body
 $body-color: $white;
 
-// Header
-$header-bg-color:$white;
 
-$header-brand-icon-color:$primary;
-$header-button-color:$primary;
-$header-placeholder-color:$muted-text;
-$notification-badge-color:$icon-color;
+// heading
+$h1-color: $text-color;
+
+// container
+$container-color:#f8f8f8;
+$container-text-color:$text-color;
+
+
+// Header
+$header-bg-color: $white;
+
+$header-brand-icon-color: $primary;
+$header-placeholder-color: $muted-text;
+$notification-badge-color: $icon-color;
 
 // sidebar
 
-$sidebar-bg-color:$white;
-$sidebar-icon-color:$icon-color;
-$sidebar-icon-hover-color:$primary;
+$sidebar-bg-color: $white;
+$sidebar-icon-color: $icon-color;
+$sidebar-icon-hover-color: $primary;
 
 
-// heading
-$h1-color:$text-color;
+// card-theme-color;
 
-// cards
-
-$card-bg-color:$white;
-$card1-icon-color:$primary;
+$card-bg-color: $white;
+$card-hover-color: $white;
+$card1-icon-color: $primary;
 $card2-icon-color: $success;
 $card3-icon-color: $primary;
-$card4-icon-color:$info;
-$card-chart-icon-color:$success;
-$card2-chart-icon-color:$secondary;
+$card4-icon-color: $info;
+$card-up-chart-icon-color: $success;
+$card-down-chart-icon-color: $secondary;
 
 
-$card1-hover-bg-:$card1-icon-color;
-$card2-hover-bg-:$card2-icon-color;
-$card3-hover-bg-:$card3-icon-color;
-$card4-hover-bg-:$card4-icon-color;
+// table
 
-$card-hover-bg-:$card1-icon-color;
-
-
+$table-body-bg-color:$white;
+$table-row-bg-color:#f5f7f9;
+$table-row-color:$text-color;
+$table-head-row-color:$text-color;
 
 
+// chart
+$total-views-color:$info;
+$total-sells-color:$secondary;
 
-$text-colors: (
+
+
+$card-theme-colors: (
+  "card1": $card1-icon-color,
+  "card2": $card2-icon-color,
+  "card3": $card3-icon-color,
+  "card4": $card4-icon-color,
+);
+
+
+$theme-colors: (
   "primary": $primary,
   "warning": $warning,
   "success": $success,
   "danger": $danger,
-  "info": $info
+  "info": $info,
 );

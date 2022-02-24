@@ -1,10 +1,21 @@
 // All the SCSS Variables goes here
 
+
+// common
+$transition-timing: 0.4s;
 // Fonts
 $font-size-base: 1rem;
 $font-family: 'Josefin Sans', sans-serif;
 $font-bold: 500;
 
+// header
+$header-height:90px;
+
+
 // border
-$border-bottom: 1px solid $border-bottom-color;
+$border-bottom: 1px solid $border-color;
+
+// container
+$container-padding:2.25rem;
+$card-container-width:25%;
 

@@ -1,0 +1,14 @@
+// Function styles goes here
+
+// color classes map
+@each $name,$value in $theme-colors {
+    .text-#{$name} {
+        color: $value;
+    }
+    };
+    
+@each $name,$value in $theme-colors {
+    .button-#{$name} {
+        background-color: $value;
+    }
+    }

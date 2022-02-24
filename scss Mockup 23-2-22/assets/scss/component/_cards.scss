@@ -1,0 +1,60 @@
+.card-wrapper {
+  
+margin: 1.125rem -0.75rem;
+  .card-container {
+    width: 25%;
+
+    padding: 0.75rem;
+  }
+
+  .card {
+    height: 240px;
+    padding: 1.5rem;
+    justify-content: space-between;
+    background-color: $card-bg-color;
+    .icon {
+      font-size: 1.75rem;
+      &-container {
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      &-show_chart {
+        font-size: 3rem;
+        color: $success;
+      }
+    }
+    .title{
+        font-size: 1rem;
+        font-weight: 300;
+        color: $muted-text;
+    }
+}
+}
+
+@each $card, $color in $card-theme-colors {
+  .#{$card} {
+    .icon {
+      color: $color;
+      &-container {
+        background-color: lighten($color, 32%);
+      }
+    }
+    &:hover {
+      .icon {
+        color: $card-hover-color;
+        &-container {
+          background-color: lighten($color, 3%);
+        }
+      }
+      color: $card-hover-color;
+      background-color: $color;
+        .title{
+            color: $white;
+            
+        }
+    }
+  }
+}
