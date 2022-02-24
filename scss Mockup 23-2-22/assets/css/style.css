@@ -85,11 +85,20 @@ body {
   height: 100%;
 }
 
+.h-50 {
+  height: 50%;
+}
+
 .w-100 {
   width: 100%;
 }
 
+.w-50 {
+  width: 50%;
+}
+
 .header {
+  background-color: #ffffff;
   border: 1px solid black;
   height: 75px;
 }

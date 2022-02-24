@@ -1,0 +1,70 @@
+// Theme colors
+
+$primary: #438ffe;
+$secondary: #fe764b;
+$success: #8bc38a;
+$danger: #e43536;
+$warning: #dc9909;
+$info: #83bcbd;
+$icon-color:#abb1bf;
+$white: #ffffff;
+
+
+
+// text color
+$text-color: #160e4d;
+$muted-text: #9fa9bc;
+
+// border
+$border-bottom-color:#e2e2e2;
+
+// Body
+$body-color: $white;
+
+// Header
+$header-bg-color:$white;
+
+$header-brand-icon-color:$primary;
+$header-button-color:$primary;
+$header-placeholder-color:$muted-text;
+$notification-badge-color:$icon-color;
+
+// sidebar
+
+$sidebar-bg-color:$white;
+$sidebar-icon-color:$icon-color;
+$sidebar-icon-hover-color:$primary;
+
+
+// heading
+$h1-color:$text-color;
+
+// cards
+
+$card-bg-color:$white;
+$card1-icon-color:$primary;
+$card2-icon-color: $success;
+$card3-icon-color: $primary;
+$card4-icon-color:$info;
+$card-chart-icon-color:$success;
+$card2-chart-icon-color:$secondary;
+
+
+$card1-hover-bg-:$card1-icon-color;
+$card2-hover-bg-:$card2-icon-color;
+$card3-hover-bg-:$card3-icon-color;
+$card4-hover-bg-:$card4-icon-color;
+
+$card-hover-bg-:$card1-icon-color;
+
+
+
+
+
+$text-colors: (
+  "primary": $primary,
+  "warning": $warning,
+  "success": $success,
+  "danger": $danger,
+  "info": $info
+);
