@@ -25,12 +25,13 @@
     }
 
     .product-info-container{
+        min-height: 400px;
         margin: -0.75rem;}
 
         .graph-container{
         padding: 0.75rem;
             
-        height: 420px;
+        
             width: 30%;
             .graph{
                 background-color: $white;
@@ -40,13 +41,13 @@
                
                .graph-heading{
                    .graph-date{
-                       font-size: 14px;
+                       font-size: .75rem;
                        color:$muted-text;
-                       .icon-keyboard_arrow_right{
-                           font-size: .5rem;
-                           transform: rotate(90deg);
-                       }
-                   }
+                    }
+                    .icon-keyboard_arrow_right{
+                        font-size: .5rem;
+                        transform: rotate(90deg);
+                    }
                }
                .scale-container{
                    padding: 2rem 0;
@@ -72,7 +73,7 @@
                    &-views-bar{
                        width: 5px;
                        background-color: $info;
-                       height: 250px;
+                    //    height: 250px;
                     }
                    &-sell-bar{
                        width: 5px;

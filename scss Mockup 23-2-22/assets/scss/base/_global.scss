@@ -5,22 +5,20 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-//   font-size: 1rem;
- 
+  //   font-size: 1rem;
 }
 
 html,
 body {
-  height: 100%;}
+  height: 100%;
+}
 
 body {
-  
-  // overflow: hidden;
+  overflow: hidden;
   font-family: $font-family;
   background-color: $body-color;
   font-size: $font-size-base;
   color: $text-color;
-
 }
 
 // flex styles
@@ -28,16 +26,15 @@ body {
   display: flex;
 }
 
-.flex{
-
+.flex {
   &-wrap {
     flex-wrap: wrap;
   }
-  
+
   &-column {
     flex-direction: column;
   }
-  
+
   &-grow-1 {
     flex-grow: 1;
   }
@@ -74,10 +71,17 @@ body {
 .overflow-hidden {
   overflow: hidden;
 }
+.overflow-auto {
+  overflow: auto;
+}
 
 .overflow-vertical {
   overflow-x: hidden;
   overflow-y: auto;
+}
+.overflow-horizontal {
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 // position classes end
 
@@ -92,32 +96,31 @@ body {
 .w-100 {
   width: 100%;
 }
-.w-50{
+.w-50 {
   width: 50%;
 }
 // height width class end
 
 //icon
-.icon{
-font-size: 20px;
-color:$icon-color;
-display: flex;
+.icon {
+  font-size: 20px;
+  color: $icon-color;
+  display: flex;
 }
 
-.icon-graph-up{
+.icon-graph-up {
   color: $success;
 }
-.icon-graph-down{
+.icon-graph-down {
   color: $secondary;
 }
-// 
-img{
+//
+img {
   max-width: 100%;
   height: auto;
 }
 
-
 // table
-.table-cell{
+.table-cell {
   text-align: left;
 }

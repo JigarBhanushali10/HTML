@@ -3,11 +3,17 @@
   .card-container {
     width: 25%;
 
+    @include tablet {
+      width: 50%;
+    }
+    @include mobile {
+      width: 100%;
+    }
     padding: 0.75rem;
   }
 
   .card {
-    height: 240px;
+    // height: 240px;
     padding: 1.5rem;
     justify-content: space-between;
     background-color: $card-bg-color;
@@ -30,12 +36,14 @@
       }
     }
     .title {
+      padding: 1.5rem 0;
       font-size: 1rem;
       font-weight: 300;
       color: $muted-text;
     }
     .numbers {
       font-size: 2rem;
+      padding-bottom: 1.75rem;
     }
     .card-bottom-text {
       font-size: 16px;
