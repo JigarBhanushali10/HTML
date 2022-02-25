@@ -22,14 +22,31 @@ margin: 1.125rem -0.75rem;
         align-items: center;
       }
       &-show_chart {
-        font-size: 3rem;
         color: $success;
+        font-size: 3rem;
+        &-down {
+          font-size: 3rem;
+         color: $secondary;
+        }
+        
       }
+
+
+      
     }
     .title{
         font-size: 1rem;
         font-weight: 300;
         color: $muted-text;
+    }
+    .numbers{
+      font-size: 2rem;
+
+    }
+    .card-bottom-text{
+      font-size: 16px;
+      padding-top: 1rem;
+      border-top: $border-bottom;
     }
 }
 }

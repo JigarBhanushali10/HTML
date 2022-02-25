@@ -1,9 +1,75 @@
+.wrapper{
+    
+    // #toggleCheckbox {
+    //     display: none;
+    //   }
+    //   .toggle-checkbox-label {
+    //       left: 6%;
+    //       top: 60%;
+    //       .icon-keyboard_arrow_right{
+    //           font-size: 1rem;
+    //       }
+    //     }
+
+    //     #toogleCheckBox:checked ~ .sidebar {
+    //         flex: 0 0 0px;
+}
 .container{
     padding: $container-padding;
     background-color: $container-color;
+
     .h1{
         font-size: 1.75rem; 
+        color: $text-color;
         // padding-bottom: 2.25rem;
     }
+
+    .product-info-container{
+        margin: 1.25rem -0.75rem;}
+
+        .graph-container{
+        padding: 0.75rem;
+            
+        height: 420px;
+            width: 30%;
+            .graph{
+                background-color: $white;
+               padding:  1.5rem;
+
+               height: 100%;
+               .graph-heading{
+                   .graph-date{
+                       font-size: 14px;
+                       color:$muted-text;
+                       .icon-keyboard_arrow_right{
+                           font-size: .5rem;
+                           transform: rotate(90deg);
+                       }
+                   }
+               }
+               .scale-container{
+                   padding: 2rem 0;
+                   .scale{
+                       
+                       &-1{
+                        height: .75rem;
+                        width: .75rem;
+                        margin:0 .5rem;
+                           background-color: $info;
+                       }
+                       &-2{
+                        margin:0 .5rem;
+                        height: .75rem;
+                        width: .75rem;
+   
+                           background-color: $secondary;
+                       }
+                    }
+               }
     
+            }
+        
+    } 
 }
+
+    

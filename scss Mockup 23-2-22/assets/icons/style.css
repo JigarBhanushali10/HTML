@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?u5ykxg');
-  src:  url('fonts/icomoon.eot?u5ykxg#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?u5ykxg') format('truetype'),
-    url('fonts/icomoon.woff?u5ykxg') format('woff'),
-    url('fonts/icomoon.svg?u5ykxg#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?77ahpc');
+  src:  url('fonts/icomoon.eot?77ahpc#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?77ahpc') format('truetype'),
+    url('fonts/icomoon.woff?77ahpc') format('woff'),
+    url('fonts/icomoon.svg?77ahpc#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -58,8 +58,11 @@
 .icon-radix_dashboard:before {
   content: "\e90a";
 }
-.icon-show_chart:before {
+.icon-show_chart-down:before {
   content: "\e90d";
+}
+.icon-show_chart:before {
+  content: "\e90b";
 }
 .icon-keyboard_arrow_right:before {
   content: "\e90c";

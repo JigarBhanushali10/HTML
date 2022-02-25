@@ -40,3 +40,32 @@
 //         border-radius: $rounded-circle;
 //     }
 // }
+ .table-container{
+     padding: 0.75rem;
+     .table{
+         padding: 0  1.5rem;
+         background-color: $white;
+         border-spacing: 0 1rem;
+
+         .table{
+
+             &-row{
+                 background-color: #f8f8f8;
+                 td{
+                     padding: 0 1.25rem;
+                     
+                     .product-image{
+         height: 52px;
+         width: 52px;
+                     }
+                 }
+                }
+                &-head{
+                    th{
+                        padding: 0 1.25rem;
+                }
+         }
+         
+        }
+     }
+ }

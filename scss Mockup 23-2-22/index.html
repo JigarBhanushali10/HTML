@@ -13,7 +13,7 @@
 <body>
     <!-- main wrapper start -->
 
-    <div class="d-flex flex-column overflow-hidden h-100">
+    <div class="d-flex flex-column overflow-vertical h-100">
         <!-- header start -->
         <header class="header d-flex justify-content-between align-items-center flex-shrink-0">
             <!-- header icons start-->
@@ -30,7 +30,7 @@
                 <div class="search-container d-flex">
                     <div class="d-flex align-items-center seacrh-icon-container">
                         <label for="search">
-                            <span class="icon icon-search" ></span>
+                            <span class="icon icon-search"></span>
                         </label>
 
                     </div>
@@ -44,8 +44,10 @@
             <nav class="notification-container">
                 <!-- header notifiactions icons start-->
                 <ul class="d-flex nav-list align-items-center">
-                    <li class="nav-item position-relative"><a href=""> <span class="icon icon-message"></span> </a><span class="tiding position-absolute"></span></li>
-                    <li class="nav-item position-relative"> <a href=""><span class="icon icon-notification_bell"></span> <span class="tiding position-absolute"></span></a> </li>
+                    <li class="nav-item position-relative"><a href=""> <span class="icon icon-message"></span> </a><span
+                            class="tiding position-absolute"></span></li>
+                    <li class="nav-item position-relative"> <a href=""><span class="icon icon-notification_bell"></span>
+                            <span class="tiding position-absolute"></span></a> </li>
 
                     <!-- header notifiactions icons end-->
 
@@ -54,7 +56,7 @@
 
                     <li class="nav-item">
                         <figure class="d-flex align-items-center profile-photo overflow-hidden">
-                            <img src="assets/img/MESSI.jpg" alt="">
+                            <img src="assets/img/MESSI.jpg" alt="profile-photo">
                         </figure>
 
                     </li>
@@ -75,15 +77,17 @@
 
         <!-- component wrapper -->
         <div class="wrapper d-flex h-100">
-            <aside class="sidebar d-flex flex-column justify-content-between align-items-center position-relative">
+            <aside
+                class="sidebar flex-shrink-0 d-flex flex-column justify-content-between align-items-center position-relative ">
 
                 <input type="checkbox" name="" id="toggleCheckbox">
-                <label for="toggleCheckbox"class=" toggle-checkbox-label position-absolute"> 
+                <label for="toggleCheckbox" class=" toggle-checkbox-label position-absolute">
                     <span class="icon icon-keyboard_arrow_right "></span>
                 </label>
                 <nav class="nav-links">
                     <ul class="nav-list">
-                        <li class="nav-item nav-active"><a href=""> <span class="icon  icon-radix_dashboard"></span> </a> </li>
+                        <li class="nav-item nav-active"><a href=""> <span class="icon  icon-radix_dashboard"></span>
+                            </a> </li>
                         <li class="nav-item"><a href=""> <span class="icon icon-cart"></span> </a> </li>
                         <li class="nav-item"><a href=""> <span class="icon icon-notepad"></span></a> </li>
                         <li class="nav-item"><a href=""> <span class="icon icon-settings"></span> </a> </li>
@@ -101,7 +105,7 @@
 
             </aside>
             <div class="container flex-grow-1">
-                <h1 class="h1">DashBoard</h1>
+                <h1 class="h1">Dashboard</h1>
                 <div class=" card-wrapper flex-wrap d-flex">
 
                     <div class="card-container">
@@ -116,11 +120,11 @@
 
                             </div>
                             <h5 class="title">Total Views</h5>
-                            <strong class="numbers"> 420</strong>
-                            <div class="card-bottom-text">start from 1 jan 2021</div>
+                            <span class="numbers"> 308.420</span>
+                            <div class="card-bottom-text">Start from 1 jan 2021</div>
                         </div>
                     </div>
-                     <div class="card-container"style="height: 250px; width: 25%;">
+                    <div class="card-container">
 
                         <div class="card card2 d-flex flex-column">
                             <div class="d-flex justify-content-between">
@@ -129,15 +133,15 @@
                                     <span class="icon icon icon-shopping_bag"></span>
                                 </span>
 
-                                <span class="icon icon-show_chart"></span>
+                                <span class="icon text-secondary icon-show_chart-down"></span>
 
                             </div>
                             <h5 class="title">Total Products</h5>
-                            <strong class="numbers"> 420</strong>
+                            <span class="numbers">10.820</span>
                             <div class="card-bottom-text">+ Add New Product</div>
                         </div>
                     </div>
-                     <div class="card-container"style="height: 250px; width: 25%;">
+                    <div class="card-container" >
 
                         <div class="card card3 d-flex flex-column ">
                             <div class="d-flex justify-content-between">
@@ -149,15 +153,15 @@
 
                             </div>
                             <h5 class="title">Total Users</h5>
-                            <strong class="numbers"> 420</strong>
-                            <div class="card-bottom-text">New user noted every week</div>
+                            <span class="numbers">1.203</span>
+                            <div class="card-bottom-text">New users noted every week</div>
                         </div>
                     </div>
-                     <div class="card-container"style="height: 250px; width: 25%;">
+                    <div class="card-container" >
                         <div class="card card4 d-flex flex-column">
                             <div class="d-flex justify-content-between">
                                 <span class="icon-container">
-                                    
+
                                     <span class="icon icon icon-cart"></span>
                                 </span>
 
@@ -165,95 +169,124 @@
 
                             </div>
                             <h5 class="title">Total Sells</h5>
-                            <strong class="numbers"> 420</strong>
-                            <div class="card-bottom-text">start from 1 jan 2021</div>
+                            <span class="numbers">1.028.623</span>
+                            <div class="card-bottom-text">Start from 1 jan 2021</div>
                         </div>
 
                     </div>
 
 
                 </div>
-                <div class="d-flex">
-                    <div class="table-container flex-grow-1 ">
-                        <table class="w-100">
-                            <thead>
-                                <tr>
-                                    <th class="table-cell">No</th>
-                                    <th class="table-cell">Product Name</th>
-                                    <th class="table-cell">Status</th>
-                                    <th class="table-cell">Sold</th>
-                                    <th class="table-cell">View</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>New Mobile App UI KIT</td>
-                                    <td>Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>New Mobile App UI KIT</td>
-                                    <td>Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>New Mobile App UI KIT</td>
-                                    <td>Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>New Mobile App UI KIT</td>
-                                    <td>Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>New Mobile App UI KIT</td>
-                                    <td>Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="graph d-flex flex-column" style="width: 30%; height: 300px;">
-                        <div class="graph-heading d-flex">
-                            <h5>
-                                Views & Sales
-                            </h5>
-                            <small class="graph-date">
-                                This Week
-                            </small>
+                <div class=" product-info-container d-flex flex-wrap">
+                    
+                        <div class="table-container flex-grow-1">
+
+                            <table class="w-100 table overflow-vertical">
+                                <thead>
+                                    <tr class="table-head">
+                                        <th class="table-cell">No</th>
+                                        <th class="table-cell">img</th>
+                                        <th class="table-cell">Product Name</th>
+                                        <th class="table-cell">Status</th>
+                                        <th class="table-cell">Sold</th>
+                                        <th class="table-cell">View</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-row">
+                                        <td>1</td>
+                                        <td><figure class="d-flex align-items-center product-image overflow-hidden">
+
+                                            <img src="assets/img/product-image.png" alt="product-image">
+                                        </figure></td>
+                                        <td>New Mobile App UI KIT</td>
+                                        <td class="text-primary">Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td>2</td>
+                                        <td><figure class="d-flex align-items-center product-image overflow-hidden">
+
+                                            <img src="assets/img/product-image.png" alt="product-image">
+                                        </figure></td>
+                                        <td>New Mobile App UI KIT</td>
+                                        <td class="text-primary">Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td>3</td>
+                                        <td><figure class="d-flex align-items-center product-image overflow-hidden">
+
+                                            <img src="assets/img/product-image.png" alt="product-image">
+                                        </figure></td>
+                                        <td>New Mobile App UI KIT</td>
+                                        <td class="text-primary">Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td>4</td>
+                                        <td><figure class="d-flex align-items-center product-image overflow-hidden">
+
+                                            <img src="assets/img/product-image.png" alt="product-image">
+                                        </figure></td>
+                                        <td>New Mobile App UI KIT</td>
+                                        <td class="text-primary">Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td>5</td>
+                                        <td><figure class="d-flex align-items-center product-image overflow-hidden">
+
+                                            <img src="assets/img/product-image.png" alt="product-image">
+                                        </figure></td>
+                                        <td>New Mobile App UI KIT</td>
+                                        <td class="text-primary">Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="d-flex">
-                            <div>
-                                <span>info color</span>
-                                <span>Total Views</span>
+
+                  
+                    <div class="graph-container flex-shrink-0">
+                        <div class="graph d-flex flex-column ">
+
+                            <div class="graph-heading d-flex justify-content-between">
+                                <h5>
+                                    Views & Sales
+                                </h5>
+                                <div class="graph-date">
+                                    This Week
+                                    <span class="icon icon-keyboard_arrow_right"></span>
+                                </div>
                             </div>
-                            <div>
-                                <span>secondary color</span>
-                                <span>Total Sells</span>
+                            <div class="d-flex scale-container">
+                                <div class="d-flex">
+                                    <span class="scale-1"></span>
+                                    <span>Total Views</span>
+                                </div>
+                                <div class="d-flex">
+                                    <span class="scale-2"></span>
+                                    <span>Total Sells</span>
+                                </div>
+
                             </div>
+                            <div class="vertical-graphs d-flex justify-content-around">
+.
+                                <div class="cols " style="width: 5%;"></div>
+                                <div class="cols " style="width: 5%;"></div>
+                                <div class="cols " style="width: 5%;"></div>
+                                <div class="cols " style="width: 5%;"></div>
+                                <div class="cols " style="width: 5%;"></div>
+                                <div class="cols " style="width: 5%;"></div>
+                                <div class="cols " style="width: 5%;"></div>
 
-                        </div>
-                        <div class="vertical-graphs d-flex justify-content-around flex-grow-1">
-
-                            <div class="cols h-100" style="width: 5%;"></div>
-                            <div class="cols h-100" style="width: 5%;"></div>
-                            <div class="cols h-100" style="width: 5%;"></div>
-                            <div class="cols h-100" style="width: 5%;"></div>
-                            <div class="cols h-100" style="width: 5%;"></div>
-                            <div class="cols h-100" style="width: 5%;"></div>
-                            <div class="cols h-100" style="width: 5%;"></div>
-
+                            </div>
                         </div>
 
                     </div>
