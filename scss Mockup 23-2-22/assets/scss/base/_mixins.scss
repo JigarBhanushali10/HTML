@@ -8,38 +8,13 @@
     left    : $left;
 }
 
+// media query mixin
 
-
-@mixin tablet {
-    @media (max-width: 992px) { @content; }
+@mixin for-tablet {
+    @media (max-width: 991px) { @content; }
 }
-@mixin mobile {
+
+@mixin for-mobile {
     @media (max-width: 576px) { @content; }
 }
-
-
-// border radius mixin
-// @mixin border-radius($for: all, $val: 10px) {
-//     @if $for==all {
-//         border-radius: $val;
-//     }
-
-//     @else if $for==topleft {
-//         border-top-left-radius: $val;
-//     }
-
-//     @else if $for==topright {
-//         border-top-right-radius: $val;
-//     }
-
-//     @else if $for==bottomright {
-//         border-bottom-right-radius: $val;
-//     }
-
-//     @else if $for==bottomleft {
-//         border-bottom-left-radius: $val;
-//     }
-// }
-
-
 

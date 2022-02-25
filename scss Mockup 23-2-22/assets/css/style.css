@@ -253,8 +253,8 @@ img {
   width: 100px;
   padding: 0.25rem;
   background-color: #ffffff;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .sidebar .nav-links {
@@ -264,10 +264,30 @@ img {
 .sidebar .nav-links .nav-list .nav-item {
   padding: 1rem;
   margin: 1rem;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .sidebar .nav-links .nav-list .nav-active .icon-radix_dashboard {
   color: #438ffe;
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    width: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: 0;
+  }
+  .sidebar .nav-item {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0;
+  }
 }
 
 #toggleCheckbox {
@@ -278,8 +298,8 @@ img {
   top: 50%;
   right: -20px;
   z-index: 999;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .toggle-checkbox-label .icon-keyboard_arrow_right {
@@ -296,6 +316,19 @@ img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   right: -110px;
+}
+
+@media (max-width: 576px) {
+  #toggleCheckbox:checked ~ .sidebar {
+    width: 100px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  #toggleCheckbox:checked ~ .sidebar .nav-item {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .container {
@@ -562,6 +595,12 @@ a:visited {
   padding: 0.75rem;
 }
 
+@media (max-width: 576px) {
+  .table-container {
+    width: 100%;
+  }
+}
+
 .table-container .table-head-container {
   padding: 1.5rem;
   background-color: #ffffff;
@@ -575,7 +614,6 @@ a:visited {
 .table-container .table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed;
   border-spacing: 0;
   background-color: #ffffff;
 }
