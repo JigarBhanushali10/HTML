@@ -37,6 +37,7 @@
                padding:  1.5rem;
 
                height: 100%;
+               
                .graph-heading{
                    .graph-date{
                        font-size: 14px;
@@ -64,6 +65,19 @@
    
                            background-color: $secondary;
                        }
+                    }
+               }
+               .total{
+
+                   &-views-bar{
+                       width: 5px;
+                       background-color: $info;
+                       height: 250px;
+                    }
+                   &-sell-bar{
+                       width: 5px;
+                       background-color: $secondary;
+                       height: 70px;
                     }
                }
     

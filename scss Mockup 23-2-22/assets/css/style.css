@@ -241,6 +241,8 @@ img {
 .sidebar {
   width: 100px;
   padding: .25rem;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .sidebar .nav-links .nav-list .nav-item {
@@ -328,6 +330,18 @@ img {
   height: .75rem;
   width: .75rem;
   background-color: #fe764b;
+}
+
+.container .graph-container .graph .total-views-bar {
+  width: 5px;
+  background-color: #83bcbd;
+  height: 250px;
+}
+
+.container .graph-container .graph .total-sell-bar {
+  width: 5px;
+  background-color: #fe764b;
+  height: 70px;
 }
 
 .text-decoration-none {
