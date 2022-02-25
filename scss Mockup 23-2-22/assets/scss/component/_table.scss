@@ -1,71 +1,49 @@
-// .table-layout-fixed {
-//     table-layout: fixed;
-// }
+.table-container {
+  width: 70%;
+  padding: 0.75rem;
+  table-layout: fixed;
+  border-collapse: separate;
+  tbody {
+    display: flex;
+    flex-direction: column;
 
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+  }
+  .table-head {
+    display: flex;
+    // flex-direction: column;
+    width: 100%;
+  }
+  .table {
+    width: 100%;
+    height: 100%;
+    padding: 0 1.5rem;
+    background-color: $white;
+    border-spacing: 0 1rem;
 
-// .table {
-//     width          : 100%;
-//     border-collapse: collapse;
-//     text-align     : left;
-
-//     &-header {
-//         background-color: $table-header-bg;
-//     }
-//     th{
-//         color:$table-heading-color;
-//         text-align: left;
-//     }
-//     th,
-//     td {
-//         vertical-align: middle;
-//         // padding       : 1.4rem;
-//         padding: $table-cell-padding;
-//         // border-color  : #29314a;
-//         border-color  : $table-cell-border-color;
-//     }
-
-//     tr {
-//         th,
-//         td {
-//             &:last-child,
-//             &:nth-child(5) {
-//                 width: 120px;
-//             }
-//         }
-//     }
-
-//     .fighter-avatar {
-//         width: 40px;
-//         height: 40px;
-//         border-radius: $rounded-circle;
-//     }
-// }
- .table-container{
-     padding: 0.75rem;
-     .table{
-         padding: 0  1.5rem;
-         background-color: $white;
-         border-spacing: 0 1rem;
-
-         .table{
-
-             &-row{
-                 background-color: #f8f8f8;
-                 td{
-                     padding: 0 1.25rem;
-                     
-                     .product-image{
-         height: 52px;
-         width: 52px;
-                     }
-                 }
-                }
-                &-head{
-                    th{
-                        padding: 0 1.25rem;
-                }
-         }
-         
+    //  .table{
+    &-cell {
+      padding: 0 1.25rem;
+      width: 16.66%;
+    }
+    &-row {
+      td {
+        background-color: #f8f8f8;
+        .product-image {
+          height: 52px;
+          width: 52px;
         }
-     }
- }
+      }
+    }
+    &-head {
+      th {
+        padding: 0 1.25rem;
+
+      }
+    }
+
+    // }
+  }
+}

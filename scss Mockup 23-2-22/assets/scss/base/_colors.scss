@@ -30,7 +30,7 @@ $body-color: $white;
 $h1-color: $text-color;
 
 // container
-$container-color:#f8f8f8;
+$body-color:#f8f8f8;
 $container-text-color:$text-color;
 
 
@@ -52,10 +52,10 @@ $sidebar-icon-hover-color: $primary;
 
 $card-bg-color: $white;
 $card-hover-color: $white;
-$card1-icon-color: $primary;
-$card2-icon-color: $success;
-$card3-icon-color: $primary;
-$card4-icon-color: $info;
+$card1-color: $primary;
+$card2-color: $success;
+$card3-color: $primary;
+$card4-color: $info;
 $card-up-chart-icon-color: $success;
 $card-down-chart-icon-color: $secondary;
 
@@ -75,10 +75,10 @@ $total-sells-color:$secondary;
 
 
 $card-theme-colors: (
-  "card1": $card1-icon-color,
-  "card2": $card2-icon-color,
-  "card3": $card3-icon-color,
-  "card4": $card4-icon-color,
+  "card1": $card1-color,
+  "card2": $card2-color,
+  "card3": $card3-color,
+  "card4": $card4-color,
 );
 
 

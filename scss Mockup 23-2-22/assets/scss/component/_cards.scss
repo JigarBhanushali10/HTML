@@ -1,6 +1,5 @@
 .card-wrapper {
-  
-margin: 1.125rem -0.75rem;
+  margin: 1.125rem -0.75rem;
   .card-container {
     width: 25%;
 
@@ -26,29 +25,24 @@ margin: 1.125rem -0.75rem;
         font-size: 3rem;
         &-down {
           font-size: 3rem;
-         color: $secondary;
+          color: $secondary;
         }
-        
       }
-
-
-      
     }
-    .title{
-        font-size: 1rem;
-        font-weight: 300;
-        color: $muted-text;
+    .title {
+      font-size: 1rem;
+      font-weight: 300;
+      color: $muted-text;
     }
-    .numbers{
+    .numbers {
       font-size: 2rem;
-
     }
-    .card-bottom-text{
+    .card-bottom-text {
       font-size: 16px;
       padding-top: 1rem;
       border-top: $border-bottom;
     }
-}
+  }
 }
 
 @each $card, $color in $card-theme-colors {
@@ -60,18 +54,17 @@ margin: 1.125rem -0.75rem;
       }
     }
     &:hover {
+      color: $card-hover-color;
+      background-color: $color;
       .icon {
         color: $card-hover-color;
         &-container {
           background-color: lighten($color, 3%);
         }
       }
-      color: $card-hover-color;
-      background-color: $color;
-        .title{
-            color: $white;
-            
-        }
+      .title {
+        color: $white;
+      }
     }
   }
 }

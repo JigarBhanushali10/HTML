@@ -1,22 +1,20 @@
 .sidebar {
-width: 100px;
-  padding:.25rem ;
-    overflow-y: auto;
-    overflow-x: hidden;
+  width: 100px;
+  padding: 0.25rem;
+  background-color: $white;
+  transition: all .4s;
 
-  
-  
   .nav-links {
     .nav-list {
       .nav {
         &-item {
-          padding: 1rem ;
-          margin: 1rem ;
+          padding: 1rem;
+          margin: 1rem;
         }
-        &-active{
-            .icon-radix_dashboard{
-                color: $primary;
-            }
+        &-active {
+          .icon-radix_dashboard {
+            color: $primary;
+          }
         }
       }
     }
@@ -27,18 +25,21 @@ width: 100px;
   display: none;
 }
 .toggle-checkbox-label {
-    right:  -16%;
-    top: 50%;
-    z-index: 999;
-    .icon-keyboard_arrow_right{
-        font-size: 1rem;
-    }
+  top: 50%;
+  right: -20px;
+  z-index: 999;
+  transition: all .4s;
+  .icon-keyboard_arrow_right {
+    font-size: 1rem;
   }
+}
 
-  #toggleCheckbox:checked ~ .toggle-checkbox-label {
-      
-    transform: rotate(180deg) ;
-    }
-    #toggleCheckbox:checked ~ .sidebar{
-width: 10px;
-    }
+
+#toggleCheckbox:checked ~ .sidebar {
+  transform: translateX(-100px);
+  width: 0;
+  .toggle-checkbox-label {
+    transform: rotate(180deg);
+    right: -110px;
+}
+}

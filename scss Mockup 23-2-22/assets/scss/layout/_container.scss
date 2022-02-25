@@ -1,4 +1,4 @@
-.wrapper{
+// .wrapper{
     
     // #toggleCheckbox {
     //     display: none;
@@ -13,10 +13,10 @@
 
     //     #toogleCheckBox:checked ~ .sidebar {
     //         flex: 0 0 0px;
-}
+// }
 .container{
     padding: $container-padding;
-    background-color: $container-color;
+    // background-color: $body-color;
 
     .h1{
         font-size: 1.75rem; 
@@ -25,7 +25,7 @@
     }
 
     .product-info-container{
-        margin: 1.25rem -0.75rem;}
+        margin: -0.75rem;}
 
         .graph-container{
         padding: 0.75rem;
