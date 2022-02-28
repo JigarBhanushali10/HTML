@@ -18,3 +18,22 @@
     @media (max-width: 576px) { @content; }
 }
 
+// media query mixin with map and if else
+
+$breakpoints: (
+    big-desktop: 1400px,
+    laptop: 1200px,
+    tablet: 992px,
+    phone: 576px,
+    small-device: 320px,
+);
+
+@mixin for-size($device) {
+    @each $screen, $size in $breakpoints {
+        @if ($screen == $device) {
+            @media screen and (max-width: $size) {
+                @content;
+            }
+        }
+    }
+}
