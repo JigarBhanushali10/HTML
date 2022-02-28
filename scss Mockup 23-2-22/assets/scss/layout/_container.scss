@@ -1,90 +1,93 @@
 // .wrapper{
-    
-    // #toggleCheckbox {
-    //     display: none;
-    //   }
-    //   .toggle-checkbox-label {
-    //       left: 6%;
-    //       top: 60%;
-    //       .icon-keyboard_arrow_right{
-    //           font-size: 1rem;
-    //       }
-    //     }
 
-    //     #toogleCheckBox:checked ~ .sidebar {
-    //         flex: 0 0 0px;
+// #toggleCheckbox {
+//     display: none;
+//   }
+//   .toggle-checkbox-label {
+//       left: 6%;
+//       top: 60%;
+//       .icon-keyboard_arrow_right{
+//           font-size: 1rem;
+//       }
+//     }
+
+//     #toogleCheckBox:checked ~ .sidebar {
+//         flex: 0 0 0px;
 // }
-.container{
-    padding: $container-padding;
-    // background-color: $body-color;
+.container {
+  padding: $container-padding;
+  // background-color: $body-color;
 
-    .h1{
-        font-size: 1.75rem; 
-        color: $text-color;
-        // padding-bottom: 2.25rem;
+  .h1 {
+    font-size: 1.75rem;
+    color: $text-color;
+    // padding-bottom: 2.25rem;
+  }
+
+  .product-info-container {
+    min-height: 400px;
+    margin: -0.75rem;
+  }
+
+  .graph-container {
+    padding: 0.75rem;
+    height: 450px;
+    @include mobile {
+      width: 100%;
+    }
+    @include tablet {
+      width: 100%;
     }
 
-    .product-info-container{
-        min-height: 400px;
-        margin: -0.75rem;}
+    width: 30%;
 
-        .graph-container{
-        padding: 0.75rem;
-            
-        
-            width: 30%;
-            .graph{
-                background-color: $white;
-               padding:  1.5rem;
+    .graph {
+      background-color: $white;
+      padding: 1.5rem;
 
-               height: 100%;
-               
-               .graph-heading{
-                   .graph-date{
-                       font-size: .75rem;
-                       color:$muted-text;
-                    }
-                    .icon-keyboard_arrow_right{
-                        font-size: .5rem;
-                        transform: rotate(90deg);
-                    }
-               }
-               .scale-container{
-                   padding: 2rem 0;
-                   .scale{
-                       
-                       &-1{
-                        height: .75rem;
-                        width: .75rem;
-                        margin:0 .5rem;
-                           background-color: $info;
-                       }
-                       &-2{
-                        margin:0 .5rem;
-                        height: .75rem;
-                        width: .75rem;
-   
-                           background-color: $secondary;
-                       }
-                    }
-               }
-               .total{
+      height: 100%;
 
-                   &-views-bar{
-                       width: 5px;
-                       background-color: $info;
-                    //    height: 250px;
-                    }
-                   &-sell-bar{
-                       width: 5px;
-                       background-color: $secondary;
-                       height: 70px;
-                    }
-               }
-    
-            }
-        
-    } 
+      .graph-heading {
+        .graph-date {
+          font-size: 1rem;
+          color: $muted-text;
+          padding-right: 1rem;
+        }
+        .icon-keyboard_arrow_right {
+          font-size: 0.5rem;
+          transform: rotate(90deg);
+        }
+      }
+      .scale-container {
+        padding: 2rem 0;
+        .scale {
+          &-1 {
+            height: 0.75rem;
+            width: 0.75rem;
+            margin: 0 0.5rem;
+            background-color: $info;
+          }
+          &-2 {
+            margin: 0 0.5rem;
+            height: 0.75rem;
+            width: 0.75rem;
+
+            background-color: $secondary;
+          }
+        }
+      }
+      .total {
+        &-views-bar {
+          width: 5px;
+          background-color: $info;
+          //    height: 250px;
+        }
+        &-sell-bar {
+          width: 5px;
+          background-color: $secondary;
+          height: 70px;
+        }
+      }
+    }
+  }
 }
-
-    

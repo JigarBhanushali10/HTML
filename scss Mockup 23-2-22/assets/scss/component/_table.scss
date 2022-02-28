@@ -1,55 +1,96 @@
+// .table-container {
+//   width: 70%;
+//   padding: 0.75rem;
+
+//   height: 470px;
+
+//   @include mobile{
+//     width: 100%;
+//   }
+//   .table-head-container{
+//     padding: 1.5rem;
+//     background-color: $white;
+//   }
+//   .table-body-container{
+//     padding: 0 1.5rem;
+//     background-color: $white;
+//   }
+//   tbody {
+
+//   }
+//   .table-head {
+
+//   }
+//   .table {
+//     width: 100%;
+//     border-collapse: collapse;
+//     // table-layout: fixed;
+//     border-spacing:0 ;
+
+//     background-color: $white;
+
+//     //  .table{
+//     &-cell {
+//       padding: 1rem;
+
+//     }
+//     &-row {
+//       td {
+//         background-color: #f8f8f8;
+//         border-bottom: .75rem solid white;
+//         .product-image {
+//           height: 52px;
+//           width: 52px;
+//         }
+//       }
+//     }
+//     &-head {
+//       th {
+//         padding: 0 1.25rem;
+
+//       }
+//     }
+
+//   }
+// }
+
 .table-container {
-  width: 70%;
-  padding: 0.75rem;
-  
-  @include mobile{
-    width: 100%;
-  }
-  .table-head-container{
-    padding: 1.5rem;
-    background-color: $white;
-  }
-  .table-body-container{
-    padding: 0 1.5rem;
-    background-color: $white;
-  }
-  tbody {
+  margin: 0.75rem;
 
-    
-  }
-  .table-head {
-    
-  }
+  // height: 470px;
+
   .table {
-    width: 100%;
-    border-collapse: collapse;
-    // table-layout: fixed;
-    border-spacing:0 ;
-    
+    padding:  0 1.5rem;
     background-color: $white;
+    border-spacing: 0 .75rem ;
+    @include position(relative);
 
-    //  .table{
     &-cell {
-      padding: 1rem;
+      padding:  1rem;
+      // border-bottom: 0.75rem solid white;
      
     }
     &-row {
+      background-color: #f8f8f8;
       td {
-        background-color: #f8f8f8;
-        border-bottom: .75rem solid white;
+       
+
         .product-image {
-          height: 45px;
-          width: 45px;
+          height: 52px;
+          width: 52px;
         }
       }
     }
     &-head {
+      @include position(sticky, 0);
       th {
-        padding: 0 1.25rem;
-
+        padding-top: 1.5rem;
+        text-align: left;
+        background-color: $white;
+        font-size: 1.25rem;
+        
+        //  border-bottom: ;
       }
     }
-
-    
   }
 }

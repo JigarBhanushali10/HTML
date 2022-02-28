@@ -6,6 +6,7 @@
 
   .nav-links {
     margin-bottom: 4rem;
+    min-height: 100px;
     .nav-list {
       .nav {
         &-item {
@@ -35,7 +36,7 @@
 }
 
 #toggleCheckbox {
-  display: none;
+  display: none;  
 }
 .toggle-checkbox-label {
   top: 50%;
@@ -58,7 +59,9 @@
     @include mobile {
       width: 100px;
       transform: translateX(0);
-
+      .toggle-checkbox-label{
+        right: -10%;
+      }
       .nav-item {
         transform: translateX(0);
         opacity: 1;
