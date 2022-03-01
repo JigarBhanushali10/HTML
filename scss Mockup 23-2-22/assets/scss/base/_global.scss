@@ -1,4 +1,8 @@
 // Global styles goes here
+
+
+// Global styles goes here
+
 *,
 ::after,
 ::before {
@@ -11,6 +15,7 @@
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -19,94 +24,141 @@ body {
   background-color: $body-color;
   font-size: $font-size-base;
   color: $text-color;
+  line-height: 1.5;
+
 }
 
 // flex styles
-.d-flex {
-  display: flex;
-}
-
-.flex {
-  &-wrap {
-    flex-wrap: wrap;
-  }
-
-  &-column {
-    flex-direction: column;
-  }
-
-  &-grow-1 {
-    flex-grow: 1;
-  }
-  &-shrink-0 {
-    flex-shrink: 0;
+.d- {
+   &flex {
+      display: flex;
   }
 }
+
+
+
+.flex- {
+  &column {
+      flex-direction: column;
+  }
+
+  &grow- {
+      &0 {
+          flex-grow: 0;
+      }
+
+      &1 {
+          flex-grow: 1;
+      }
+  }
+
+  &shrink- {
+      &0 {
+          flex-shrink: 0;
+      }
+
+      &1 {
+          flex-shrink: 1;
+      }
+  }
+
+  &wrap {
+      flex-wrap: wrap;
+  }
+
+  &nowrap {
+      flex-wrap: nowrap;
+  }
+}
+
+
+
+
 
 .align-items-center {
   align-items: center;
 }
 
-.justify-content-end {
-  justify-content: flex-end;
+
+.justify-content-{
+  
+      &between {
+          justify-content: space-between;
+      }
+
+      &center {
+          justify-content: center;
+      }
+
+      &evenly {
+          justify-content: space-evenly;
+      }
+
+      &around {
+          justify-content: space-around;
+      }
+  
 }
 
-.justify-content-between {
-  justify-content: space-between;
-}
 
-.justify-content-around {
-  justify-content: space-around;
-}
 // flex styles ends
 
 // position classes start
-.position-relative {
-  position: relative;
-}
-.position-absolute {
-  position: absolute;
-}
+.position- {
+  &relative {
+      position: relative;
+  }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-.overflow-auto {
-  overflow: auto;
-}
-
-.overflow-vertical {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.overflow-horizontal {
-  overflow-x: auto;
-  overflow-y: hidden;
+  &absolute {
+    position: absolute;
+  }
 }
 // position classes end
 
-// height width class start
 
-.h-100 {
-  height: 100%;
+// overflow start
+
+.overflow-{
+  &hidden{
+    overflow: hidden;
+
+  }
+  &auto{
+    overflow: auto;
+
+  }
+  &vertical{
+  overflow-x: hidden;
+  overflow-y: auto;
+
 }
-.h-50 {
-  height: 50%;
+ &horizontal{
+  overflow-x: auto;
+  overflow-y: hidden;
+
+ }
 }
-.w-100 {
-  width: 100%;
-}
-.w-50 {
-  width: 50%;
+
+// overflow end
+
+
+// height width class start
+@each $percent in (25, 50, 75, 100) {
+  .h-#{$percent} {
+      height: 1% * $percent;
+  }
+
+  .w-#{$percent} {
+      width: 1% * $percent;
+  }
 }
 // height width class end
 
 //icon
 .icon {
-  font-size: 20px;
-  color: $icon-color;
-  display: flex;
+  display: block;
 }
+
 
 .icon-graph-up {
   color: $success;
@@ -114,7 +166,7 @@ body {
 .icon-graph-down {
   color: $secondary;
 }
-//
+// image
 img {
   max-width: 100%;
   height: auto;
@@ -124,3 +176,28 @@ img {
 .table-cell {
   text-align: left;
 }
+
+  
+  
+  // text align start
+  
+  .text- {
+      &center {
+          text-align: center;
+      }
+  
+      &left {
+          text-align: left;
+      }
+  
+      &right {
+          text-align: right;
+      }
+  }
+  
+  // text align end
+  
+  // to reserve space for scroll-bar before it apppears
+  .gutter-stable {
+      scrollbar-gutter: stable;
+  }
