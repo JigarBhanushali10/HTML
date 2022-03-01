@@ -1,0 +1,122 @@
+// .table-container {
+//   width: 70%;
+//   padding: 0.75rem;
+
+//   height: 470px;
+
+//   @include mobile{
+//     width: 100%;
+//   }
+//   .table-head-container{
+//     padding: 1.5rem;
+//     background-color: $white;
+//   }
+//   .table-body-container{
+//     padding: 0 1.5rem;
+//     background-color: $white;
+//   }
+//   tbody {
+
+//   }
+//   .table-head {
+
+//   }
+//   .table {
+//     width: 100%;
+//     border-collapse: collapse;
+//     // table-layout: fixed;
+//     border-spacing:0 ;
+
+//     background-color: $white;
+
+//     //  .table{
+//     &-cell {
+//       padding: 1rem;
+
+//     }
+//     &-row {
+//       td {
+//         background-color: #f8f8f8;
+//         border-bottom: .75rem solid white;
+//         .product-image {
+//           height: 52px;
+//           width: 52px;
+//         }
+//       }
+//     }
+//     &-head {
+//       th {
+//         padding: 0 1.25rem;
+
+//       }
+//     }
+
+//   }
+// }
+
+.table-container {
+  margin: 0.75rem 0;
+  height: 500px;
+  @include position(relative);
+
+  // height: 470px;
+
+  .table {
+    border-spacing: 0 3px;
+
+    @include position(relative);
+
+    t {
+      &head {
+        @include position(sticky);
+        top: 0;
+      }
+
+      &d {
+        background-color: $white;
+        padding: 1rem 1.25rem;
+
+        .product-image {
+          width: 24px;
+
+          // height: 24px;
+        }
+
+        .company-logo {
+          width: 80px;
+        }
+        .product-name {
+          padding-left: 1rem;
+        }
+      }
+
+      @include position(sticky, 0);
+      &h {
+        padding: 1rem 1.25rem;
+        text-align: left;
+        background-color: $white;
+        font-size: 1.25rem;
+        color: $muted-text;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@each $type, $color in $type-color {
+  .#{$type} {
+    color: $color;
+    background-color: lighten($color, 33%);
+    border-radius: 30px;
+  }
+}
+
+.want {
+  background-color: #e4ffe8;
+}
+.waiting {
+  background-color: #fff4ea;
+}
+.cancelled {
+  background-color: rgba(71, 71, 71, 0.062);
+}

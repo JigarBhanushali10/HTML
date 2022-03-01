@@ -1,0 +1,140 @@
+.sidebar {
+  width: 250px;
+  // padding: 0.25rem;
+  background-color: $white;
+  // transition: all $transition-timing;
+  // border: 1px solid black;
+  transition: all 0.6s;
+  .navigation-links {
+   
+    .nav- {
+      &heading {
+  transition: all 0.6s;
+
+        padding: 1.5rem 2rem 1rem;
+      }
+      &text {
+  transition: all 0.6s;
+
+      
+      }
+      &link {
+        margin-bottom: 2rem;
+        .nav-item {
+          a {
+            padding: 0.25rem 1rem;
+            color: $icon-color;
+            border-left: 2px solid $white;
+
+            display: flex;
+            align-items: center;
+            .icon {
+              padding: 1rem;
+            }
+            &:hover {
+              border-left: 2px solid $success;
+              color: $success;
+              background-color: lighten($color: $success, $amount: 63);
+              .icon {
+                color: $success;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+  
+   #toggleCheckbox:checked {
+    ~ .sidebar {
+      width: 75px;
+      
+ 
+      .nav-{
+        &text, &heading{
+        transform: translateX(60px);
+        opacity: 0;
+       
+      }
+    
+      
+      @include mobile {
+        width: 100px;
+        transform: translateX(0);
+        .nav-item {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }}
+    }
+  
+  }
+
+
+  //   .nav-links {
+  //     margin-bottom: 4rem;
+  //     min-height: 100px;
+  //     .nav-list {
+  //       .nav {
+  //         &-item {
+  //           padding: 1rem;
+  //           margin: 1rem;
+  //           transition: all $transition-timing;
+  //         }
+  //         &-active {
+  //           .icon-radix_dashboard {
+  //             color: $primary;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+
+  //   @include mobile {
+  //     width: 0;
+  //     transform: translateX(-100%);
+  //     @include position(absolute, 0, auto, 0, 0);
+
+  //     .nav-item {
+  //       transform: translateX(-100%);
+  //       opacity: 0;
+  //     }
+  //   }
+  // }
+
+  // #toggleCheckbox {
+  //   display: none;
+  // }
+  // .toggle-checkbox-label {
+  //   top: 50%;
+  //   right: -20px;
+  //   z-index: 999;
+  //   transition: all $transition-timing;
+  //   .icon-keyboard_arrow_right {
+  //     font-size: 1rem;
+  //   }
+  // }
+
+  // #toggleCheckbox:checked {
+  //   ~ .sidebar {
+  //     transform: translateX(-100px);
+  //     width: 0;
+  //     .toggle-checkbox-label {
+  //       transform: rotate(180deg);
+  //       right: -110px;
+  //     }
+  //     @include mobile {
+  //       width: 100px;
+  //       transform: translateX(0);
+  //       .toggle-checkbox-label{
+  //         right: -10%;
+  //       }
+  //       .nav-item {
+  //         transform: translateX(0);
+  //         opacity: 1;
+  //       }
+  //     }
+  //   }

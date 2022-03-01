@@ -1,0 +1,112 @@
+// Theme colors
+
+$primary: #4a98e6;
+$secondary: #000000;
+$success: #00b11c;
+$danger: #ea6365;
+$warning: #fb881d;
+$info: #1daa6f;
+$cheaper: #6b67fe;
+$white: #ffffff;
+
+// icon
+
+$icon-color: #82838c;
+$icon-container-bg-primary-color: #edf4ff;
+$icon-container-bg-info-color: #f3f9f9;
+
+
+// text color
+$text-color: #160e4d;
+$muted-text: #9fa9bc;
+
+// border
+$border-color: #e2e2e2;
+
+// Body
+$body-color: #fafafa;
+
+
+// heading
+$h1-color: $text-color;
+
+// container
+
+$container-text-color:$text-color;
+
+
+// Header
+$header-bg-color: $white;
+
+$header-brand-icon-color: $primary;
+$header-placeholder-color: $muted-text;
+$notification-badge-color: $icon-color;
+
+// sidebar
+
+$sidebar-bg-color: $white;
+$sidebar-icon-color: $icon-color;
+$sidebar-icon-hover-color: $primary;
+
+
+// card-theme-color;
+
+$card-bg-color: $white;
+$card-hover-color: $white;
+$card1-color: $secondary;
+$card2-color: $primary;
+$card3-color: $info;
+$card4-color: $warning;
+$card5-color: $cheaper;
+$card6-color: $danger;
+$card-up-chart-icon-color: $success;
+$card-down-chart-icon-color: $secondary;
+
+
+// table
+
+$table-body-bg-color:$white;
+$table-row-bg-color:#f5f7f9;
+$table-row-color:$text-color;
+$table-head-row-color:$text-color;
+
+
+// chart
+$total-views-color:$info;
+$total-sells-color:$secondary;
+
+
+
+$card-theme-colors: (
+  "card1": $card1-color,
+  "card2": $card2-color,
+  "card3": $card3-color,
+  "card4": $card4-color,
+  "card5": $card5-color,
+  "card6": $card6-color,
+);
+
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary":$secondary,
+  "warning": $warning,
+  "success": $success,
+  "danger": $danger,
+  "info": $info,
+  
+);
+
+$discard-color:$danger;
+$want-color:$success;
+$waiting-color:$warning;
+$cancelled-color:$secondary;
+
+
+
+$type-color:(
+  "discard":$discard-color,
+  "want":$want-color,
+  "waiting":$waiting-color,
+  "cancelled":$cancelled-color,
+)

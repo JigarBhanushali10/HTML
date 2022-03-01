@@ -1,0 +1,132 @@
+// Global styles goes here
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  //   font-size: 1rem;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  font-family: $font-family;
+  background-color: $body-color;
+  // font-size: $font-size-base;
+  // color: $text-color;
+}
+
+// flex styles
+.d-flex {
+  display: flex;
+}
+
+.flex {
+  &-wrap {
+    flex-wrap: wrap;
+  }
+
+  &-column {
+    flex-direction: column;
+  }
+
+  &-grow-1 {
+    flex-grow: 1;
+  }
+  &-shrink-0 {
+    flex-shrink: 0;
+  }
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+// flex styles ends
+
+// position classes start
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-vertical {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.overflow-horizontal {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+// position classes end
+
+// height width class start
+
+.h-100 {
+  height: 100%;
+}
+.h-50 {
+  height: 50%;
+}
+.w-100 {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+// height width class end
+
+//icon
+.icon {
+  font-size: 20px;
+  color: $icon-color;
+ 
+}
+
+.icon-graph-up {
+  color: $success;
+}
+.icon-graph-down {
+  color: $secondary;
+}
+//
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// table
+.table-cell {
+  text-align: left;
+}
+#toggleCheckbox {
+  display: none;  
+}
