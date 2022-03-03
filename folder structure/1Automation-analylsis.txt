@@ -1,0 +1,111 @@
+|-- app
+     |-- modules
+       |-- Applicatioin
+           |-- [+] components
+                   |--add/edit
+                        |--details
+                        |--environmeny
+                        |--tag
+                   |--list
+                   |-- [+] modules
+                        |--details
+                          |-- [+] components
+                                |--overview
+                                |--screen
+                                |--testcase
+                                    |--add/edit
+                                        |--testcase-details
+                                        |--test-Data
+                                        |--test-step
+                                        |--Attachment
+                                |--testSuite
+                                |--execution
+                                        |--execution-list
+                                            |--in progress
+                                            |--Completed
+                                            |--Aborted
+           |-- Applicatioin-routing.module.ts
+           |-- Applicatioin.module.ts
+        |-- settings
+            |-- [+] components
+                    |-- user-management
+                    |-- Applicatioin-access
+        |-- settings-routing.module.ts
+        |-- settings.module.ts
+        |-- Doctumentation
+            |--1 . Application 
+                |-- Add Application 
+                |-- Environment
+                |--Tag 
+                |--Application List 
+            |--2 . Overview
+                |-- 2.1 Cards 
+                |--2.2 Execution Trend 
+                |--2.3 Test Case Distribution 
+                |--2.4 Overall Execution Result 
+                |--2.5 Test Suite Last Execution Re... 
+            |--3 . Screen
+                |-- 3.1 Add Screen
+                |-- 3.2 Screen Locator '
+            |--4 . Test Case 
+                |--4.1 Test Case 
+                |--List 4.2 Test Case Details 
+                |--4.3 Test Data 
+                |--4.4 Test Step 
+                |--4.5 Attachment 
+                |--4.6 Approve Test Case 
+                |--4.7 clone Test case 
+                |--4.8 Export Test Case 
+                |--4.9 View Test Case Version His... 
+            |--5 . Automate 
+                |--5.1 Click Action 
+                |--5.2 Enter Value in Text Field 
+                |--5.3 Mouse and Keyboard 
+                |--5.4 Set Variable 
+                |--5.5 verification 
+                |--5.6 If and For Loop 
+                |--5.7 Database 
+                |--5.8 Browser Commands 
+            |--6 . Test Suite 
+                |--6.1 Add Test Suite 
+                |--6.2 Link/Unlink Test Case 
+            |--7 . Execution 
+                |--7.1 Execution list 
+                |--7.2 Execution Details 
+                |--7.3 Execution Summary 
+                |--7.4 Execution Wizard 
+                |--7.5 Execution Log 
+            |--8 . Settings 
+                |--8.1 user Management 
+                |--8.2 Application Access 
+                |--8.3 Change Password 
+                
+
+        |-- Doctumentation-routing.module.ts
+        |-- Doctumentation.module.ts
+
+     |-- Core
+     |-- [+] header
+     |-- [+] authentication
+            |--log-in
+            |--registration
+            |--sign-up
+       |-- [+] sidebar
+       |-- [+] guards
+    
+       |-- [+] http
+       |-- [+] services
+       |-- core.module.ts
+     |-- Shared
+          |-- [+] components
+                |--table
+                |--form
+                |--overlay-div
+                |--cards
+                |--split-view-sidebar
+                |--automation switch
+                |--filter.pipe.ts
+          |-- [+] directives
+          |-- [+] pipes 
+          |-- [+] models
+          
