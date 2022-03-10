@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'app';
-  src:  url('fonts/app.eot?z6qjbk');
-  src:  url('fonts/app.eot?z6qjbk#iefix') format('embedded-opentype'),
-    url('fonts/app.ttf?z6qjbk') format('truetype'),
-    url('fonts/app.woff?z6qjbk') format('woff'),
-    url('fonts/app.svg?z6qjbk#app') format('svg');
+  src:  url('fonts/app.eot?xlhjic');
+  src:  url('fonts/app.eot?xlhjic#iefix') format('embedded-opentype'),
+    url('fonts/app.ttf?xlhjic') format('truetype'),
+    url('fonts/app.woff?xlhjic') format('woff'),
+    url('fonts/app.svg?xlhjic#app') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,14 +25,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-filternew:before {
+  content: "\e911";
+}
+.icon-newbrand:before {
+  content: "\e912";
+}
+.icon-sticker:before {
+  content: "\e90e";
+}
 .icon-chart:before {
   content: "\e90d";
 }
 .icon-customer:before {
   content: "\e909";
-}
-.icon-filters:before {
-  content: "\e908";
 }
 .icon-shop-window:before {
   content: "\e906";

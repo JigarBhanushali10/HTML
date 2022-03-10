@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>Mockup</title>
 </head>
+
 <body>
     <!-- wrapper : start -->
     <div class="d-flex h-100">
         <!-- sidebvar : start -->
 
-        <aside class="sidebar  d-flex flex-column py-5" style="flex: 0 0 300px;border: 1px solid black;overflow: auto;">
+        <aside class="sidebar  d-flex flex-column py-5 overflow-auto" >
             <!-- 20% width -->
 
             <!-- brand icon start-->
             <div class="icon-container pb-5 ps-5">
-                <span>O</span>
+                <span class="icon icon-newbrand"></span>
             </div>
             <!-- brand icon end-->
 
@@ -28,24 +29,30 @@
                 <nav class=" flex-grow-1">
                     <!-- navbar start -->
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="" class="nav-link ps-5">
-                                <span class="icon icon-home"></span> <span class="link-text" style="padding-left: 2.5rem;">Home</span>
+                        <li class="nav-item mb-4"><a href="" class="nav-link  d-flex align-items-center ps-5">
+                                <span class="icon icon-home"></span> <span class="link-text"
+                                    style="padding-left: 2.5rem;">Home</span>
                             </a></li>
-                        <li class="item"><a href="" class="nav-link ps-5">
-                            <span class="icon icon-trophy"></span> <span class="link-text " style="padding-left:  2.5rem;">Projects</span>
+                        <li class="nav-item mb-4"><a href="" class="nav-link d-flex aliign-items-center ps-5">
+                                <span class="icon icon-trophy"></span> <span class="link-text "
+                                    style="padding-left:  2.5rem;">Projects</span>
                             </a></li>
-                        <li class="item"><a href="" class="nav-link ps-5">
-                            <span class="icon icon-bank"></span> <span class="link-text" style="padding-left: 2.5rem;">Billings</span>
+                        <li class="nav-item mb-4"><a href="" class="nav-link d-flex aliign-items-center ps-5">
+                                <span class="icon icon-bank"></span> <span class="link-text"
+                                    style="padding-left: 2.5rem;">Billings</span>
                             </a></li>
-                        <li class="item"><a href="" class="nav-link ps-5">
-                            <span class="icon icon-user"></span> <span class="link-text" style="padding-left: 2.5rem;">Team
+                        <li class="nav-item mb-4"><a href="" class="nav-link d-flex aliign-items-center ps-5">
+                                <span class="icon icon-user"></span> <span class="link-text"
+                                    style="padding-left: 2.5rem;">Team
                                     Members</span>
                             </a></li>
-                        <li class="item"><a href="" class="nav-link ps-5">
-                            <span class="icon icon-bar-chart"></span> <span class="link-text" style="padding-left: 2.5rem;">Stats</span>
+                        <li class="nav-item mb-4"><a href="" class="nav-link d-flex aliign-items-center ps-5">
+                                <span class="icon icon-bar-chart"></span> <span class="link-text"
+                                    style="padding-left: 2.5rem;">Stats</span>
                             </a></li>
-                        <li class="item"><a href="" class="nav-link ps-5">
-                            <span class="icon icon-settings"></span> <span class="link-text" style="padding-left: 2.5rem;">Settings</span>
+                        <li class="nav-item mb-4"><a href="" class="nav-link d-flex aliign-items-center ps-5">
+                                <span class="icon icon-settings"></span> <span class="link-text"
+                                    style="padding-left: 2.5rem;">Settings</span>
                             </a></li>
                     </ul>
                     <!-- navbar start -->
@@ -53,13 +60,17 @@
                 </nav>
                 <!-- nav end -->
 
-                <div class="profile flex-shrink-0 d-flex justify-content-center" >
-                    <figure class="profile-image">
-                        <img src="" alt="">
-                    </figure>
-                    <figcaption class="profile-name">
-                        <h5 class="user-name text-primary">Jigar</h5>
-                    </figcaption>
+                <div class="profile flex-shrink-0 d-flex justify-content-center ">
+                    <div class="d-flex flex-column align-items-center">
+                        <figure
+                            class="profile-picture rounded-3 overflow-hidden d-flex justify-content-center img-thumbnail"
+                            style="width: 60px; height: 60px;">
+                            <img src="assets/img/MESSI.jpg" alt="" class="rounded-3">
+                        </figure>
+                        <figcaption class="profile-name">
+                            David Milan
+                        </figcaption>
+                    </div>
                 </div>
             </div>
 
@@ -73,26 +84,27 @@
         <div class="flex-grow-1 d-flex flex-column overflow-auto">
             <!-- 80% width -->
             <!-- main container start -->
-            <div class="container-fluid  p-5 d-flex" style="border: 1px solid red;flex-grow: 1;">
+            <div class="container-fluid  p-5 d-flex flex-grow-1" >
                 <!-- content start -->
                 <div class=" w-70 pe-4 flex-grow-1">
                     <!-- search container start  -->
                     <div class="d-flex mb-4 border col-9 rounded-3 p-1">
                         <label for="search">
                             <span class="icon icon-search px-2"></span>
-                        </label> <input type="search" name="" id="search" placeholder="Search for stats" class="border-0">
+                        </label> <input type="search" name="" id="search" placeholder="Search for stats"
+                            class="border-0">
                     </div>
                     <!-- search container end  -->
                     <!-- user greeting start -->
                     <div class="d-flex justify-content-between align-items-center pb-4">
                         <div>
-                            <h1>Hello Jigar</h1>
+                            <h1>Hello David</h1>
                             <span class="text-muted">Welcom Back !</span>
                         </div>
                         <!-- filter box start -->
                         <div class="d-flex border rounded-3 align-items-center ">
                             <input type="search" placeholder="Filter" class="border-0 ">
-                            <span class="icon icon-filters"></span>
+                            <span class="icon icon-filternew"></span>
                         </div>
                         <!-- filter box end -->
 
@@ -100,7 +112,7 @@
                     <!-- user greeting end -->
                     <!-- horizontal card start -->
 
-                    <div class="card-group bg-light border rounded-3 px-3 mb-4">
+                    <div class="card-group bg-light border  px-3 mb-4" style="border-radius:2rem ;">
                         <!-- card1 start -->
                         <div class="col-4  p-3">
                             <div class="pb-4">
@@ -150,9 +162,9 @@
                     <!-- individual cards start -->
                     <div class="row g-4 ">
                         <div class="col-6">
-                            <div class="p-3 border bg-light">
+                            <div style="border-radius: 2rem;" class="p-3 border  bg-orange ">
                                 <div class="d-flex justify-content-end">
-                                    <span class="icon icon-arrow"></span>
+                                    <span class="icon icon-arrow text-warning"></span>
 
                                 </div>
                                 <div class="d-flex justify-content-between">
@@ -163,9 +175,9 @@
                                         <div class="card-text">
                                             Total Sales Today
                                         </div>
-                                        <h3 class="card-title">
+                                        <span class="card-title fs-3 fw-bold ">
                                             $500
-                                        </h3>
+                                        </span>
                                     </div>
                                     <div class="w-25  border rounded-circle"></div>
 
@@ -173,22 +185,22 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="p-3 border bg-light">
+                            <div style="border-radius: 2rem;" class="p-3 border  bg-light">
                                 <div class="d-flex justify-content-end">
-                                    <span class="icon icon-arrow"></span>
+                                    <span class="icon icon-arrow text-success"></span>
 
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <div>
                                         <h5 class="">
-                                            Sales
+                                            Profit
                                         </h5>
                                         <div class="card-text">
-                                            Total Sales Today
+                                            Per Day Ratio
                                         </div>
-                                        <h3 class="card-title">
-                                            $500
-                                        </h3>
+                                        <span class="card-title fs-3 fw-bold">
+                                            $150
+                                        </span>
                                     </div>
                                     <div class="w-25  border rounded-circle"></div>
 
@@ -196,22 +208,22 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="p-3 border bg-light">
+                            <div style="border-radius: 2rem;" class="p-3 border  bg-light">
                                 <div class="d-flex justify-content-end">
-                                    <span class="icon icon-arrow"></span>
+                                    <span class="icon icon-arrow text-primary"></span>
 
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <div>
                                         <h5 class="">
-                                            Sales
+                                            Orders
                                         </h5>
                                         <div class="card-text">
-                                            Total Sales Today
+                                            Total Orders Today
                                         </div>
-                                        <h3 class="card-title">
-                                            $500
-                                        </h3>
+                                        <span class="card-title fs-3 fw-bold">
+                                            1000
+                                        </span>
                                     </div>
                                     <div class="w-25  border rounded-circle"></div>
 
@@ -219,7 +231,7 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="p-3 border bg-light">
+                            <div style="border-radius: 2rem;" class="p-3 border  bg-light">
                                 <div class="d-flex justify-content-end">
                                     <span class="icon icon-arrow"></span>
 
@@ -227,21 +239,21 @@
                                 <div class="d-flex justify-content-between">
                                     <div>
                                         <h5 class="">
-                                            Sales
+                                            Visits
                                         </h5>
                                         <div class="card-text">
-                                            Total Sales Today
+                                            Total Visits Today
                                         </div>
-                                        <h3 class="card-title">
-                                            $500
-                                        </h3>
+                                        <span class="card-title fs-3 fw-bold">
+                                            400
+                                        </span>
                                     </div>
                                     <div class="w-25  border rounded-circle"></div>
 
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
 
                     <!-- individual cards end -->
@@ -249,7 +261,64 @@
                 </div>
                 <!-- content end -->
                 <!-- vertical card start -->
-                <div class="bg-info  rounded-3 border" style=" width: 350px; ">
+                <div class=" card bg-black text-white  border p-5 flex" style=" width: 350px; border-radius: 2rem;">
+                    <div>
+                        <h5 class="pb-5">Sales Revenue</h5>
+                        <div class="d-flex flex-wrap flex-column">
+                            <div class=" col-12 d-flex  align-items-center pb-5">
+                                <div style="height: max-content; width: max-content;"
+                                    class="rounded-circle d-flex justify-content-center align-items-center    bg-light ">
+                                    <span class="icon icon-sticker p-3 fs-4 text-black">
+
+                                    </span>
+                                </div>
+                                <div class=" ps-5">
+                                    <div class=" fs-4 fw-bold">230k</div>
+                                    <div>Sales</div>
+                                </div>
+                            </div>
+                            <div class=" col-12 d-flex  align-items-center pb-5">
+                                <div style="height: max-content; width: max-content;"
+                                    class="rounded-circle d-flex justify-content-center align-items-center    bg-light ">
+                                    <span class="icon icon-customer p-3 fs-4 text-black">
+
+                                    </span>
+                                </div>
+                                <div class=" ps-5">
+                                    <div class=" fs-4 fw-bold">8.549k</div>
+                                    <div>Customers</div>
+                                </div>
+                            </div>
+                            <div class=" col-12 d-flex  align-items-center pb-5">
+                                <div style="height: max-content; width: max-content;"
+                                    class="rounded-circle d-flex justify-content-center align-items-center    bg-light ">
+                                    <span class="icon icon-dashboard p-3 fs-4 text-black">
+
+                                    </span>
+                                </div>
+                                <div class=" ps-5">
+                                    <div class=" fs-4 fw-bold">1.423k</div>
+                                    <div>Products</div>
+                                </div>
+                            </div>
+                            <div class=" col-12 d-flex  align-items-center pb-5">
+                                <div style="height: max-content; width: max-content;"
+                                    class="rounded-circle d-flex justify-content-center align-items-center    bg-light ">
+                                    <span class="icon icon-chart p-3 fs-4 text-black">
+
+                                    </span>
+                                </div>
+                                <div class=" ps-5">
+                                    <div class=" fs-4 fw-bold">$9745</div>
+                                    <div>Revenue</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <h5>Statistics</h5>
+                    </div>
 
 
                 </div>
