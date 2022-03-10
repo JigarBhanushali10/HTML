@@ -15,7 +15,7 @@
     <div class="d-flex h-100">
         <!-- sidebvar : start -->
 
-        <aside class="sidebar  d-flex flex-column py-5 overflow-auto border-end">
+        <aside class="sidebar  d-flex flex-column py-5  border-end">
             <!-- 20% width -->
 
             <!-- brand icon start-->
@@ -26,7 +26,7 @@
 
             <div class="d-flex flex-column justify-content-between h-100">
                 <!-- nav start -->
-                <nav class=" flex-grow-1">
+                <nav class=" flex-grow-1 overflow-auto">
                     <!-- navbar start -->
                     <ul class="navbar-nav font-weight-500">
                         <li class="nav-item mb-4 text-nowrap border-start border-trasperent"><a href=""
@@ -59,13 +59,13 @@
 
                 </nav>
                 <!-- nav end -->
-
+                <!-- profile info start -->
                 <div class="profile flex-shrink-0 d-flex justify-content-center ">
                     <div class="d-flex flex-column align-items-center">
                         <figure
                             class="profile-picture rounded-3 overflow-hidden d-flex justify-content-center img-thumbnail"
                             style="width: 60px; height: 60px;">
-                            <img src="assets/img/MESSI.jpg" alt="" class="rounded-3">
+                            <img src="assets/img/MESSI.jpg" alt="profile-picture" class="rounded-3">
                         </figure>
                         <figcaption class="profile-name fw-bold">
                             David Milan
@@ -73,6 +73,7 @@
                     </div>
                 </div>
             </div>
+            <!-- profile info end -->
 
 
         </aside>
@@ -86,9 +87,9 @@
             <!-- main container start -->
             <div class="container-fluid  p-5 d-flex flex-grow-1">
                 <!-- content start -->
-                <div class=" w-70 pe-4 flex-grow-1">
+                <div class=" w-70 pe-5 flex-grow-1">
                     <!-- search container start  -->
-                    <div class="search d-flex mb-4 border col-9 input-border-radius p-1 overflow-hidden">
+                    <div class="search d-flex mb-4 border col-9 input-border-radius p-2 overflow-hidden">
                         <label for="search" class="d-flex align-items-center">
                             <span class="icon icon-search px-2"></span>
                         </label> <input type="text" name="" id="search" placeholder="Search for stats"
@@ -102,7 +103,7 @@
                             <span class="text-muted">Welcom Back !</span>
                         </div>
                         <!-- filter box start -->
-                        <div class=" filter d-flex border input-border-radius align-items-center overflow-hidden">
+                        <div class=" filter d-flex border input-border-radius align-items-center overflow-hidden p-1">
                             <input type="text" placeholder="Filters" class="form-control border-0 ">
                             <span class=" icon icon-filternew pe-4"></span>
                         </div>
@@ -120,7 +121,7 @@
                             </div>
                             <div>
                                 <small class="card-title text-muted ">View</small>
-                                <h2 class="m-0 py-2 fw-bolder">500</h2>
+                                <div class="m-0 py-2 fw-bolder fs-1">500</div>
                                 <small class="text-muted">Per Day</small>
                             </div>
 
@@ -135,7 +136,7 @@
                             </div>
                             <div>
                                 <small class="card-title text-muted ">Visits</small>
-                                <h2 class="m-0 py-2 fw-bolder">2000</h2>
+                                <div class="m-0 py-2 fw-bolder fs-1">2000</div>
                                 <small class="text-muted">Per Minute</small>
                             </div>
 
@@ -149,7 +150,7 @@
                             </div>
                             <div>
                                 <small class="card-title text-muted ">Orders</small>
-                                <h2 class="m-0 py-2 fw-bolder">5100</h2>
+                                <div class="m-0 py-2 fw-bolder fs-1">5100</div>
                                 <small class="text-muted">Per Day</small>
                             </div>
 
@@ -168,17 +169,17 @@
                                 </div>
                                 <div class=" d-flex justify-content-between align-items-center">
                                     <div class="d-flex flex-column">
-                                        <h5 class="card-titlecard-title fw-bolder">
+                                        <h5 class="card-titlecard-title fw-bolder fs-4">
                                             Sales
                                         </h5>
                                         <small class="card-text text-muted pb-3">
                                             Total Sales Today
                                         </small>
-                                        <span class="card-title fs-3 fw-bolder ">
+                                        <span class=" fs-3 fw-bolder ">
                                             $500
                                         </span>
                                     </div>
-                                    <div class=" p-5 rounded-circle fs-3 fw-bolder"> 50%</div>
+                                    <div class=" circular-progress rounded-circle fs-3 fw-bolder"> 100%</div>
 
                                 </div>
                             </div>
@@ -190,17 +191,17 @@
                                 </div>
                                 <div class=" d-flex justify-content-between align-items-center">
                                     <div class="d-flex flex-column">
-                                        <h5 class="card-title fw-bolder">
+                                        <h5 class="card-title fw-bolder fs-4">
                                             Profit
                                         </h5>
                                         <small class="card-text text-muted pb-3">
                                             Per Day Ratio
                                         </small>
-                                        <span class="card-title fs-3 fw-bolder">
+                                        <span class=" fs-3 fw-bolder">
                                             $150
                                         </span>
                                     </div>
-                                    <div class=" p-5 rounded-circle fs-3 fw-bolder"> 50%</div>
+                                    <div class=" circular-progress rounded-circle fs-3 fw-bolder"> 100%</div>
 
                                 </div>
                             </div>
@@ -212,17 +213,17 @@
                                 </div>
                                 <div class=" d-flex justify-content-between align-items-center">
                                     <div class="d-flex flex-column">
-                                        <h5 class="card-title fw-bolder">
+                                        <h5 class="card-title fw-bolder fs-4">
                                             Orders
                                         </h5>
                                         <small class="card-text text-muted pb-3">
                                             Total Orders Today
                                         </small>
-                                        <span class="card-title fs-3 fw-bolder">
+                                        <span class=" fs-3 fw-bolder">
                                             1000
                                         </span>
                                     </div>
-                                    <div class=" p-5 rounded-circle fs-3 fw-bolder"> 50%</div>
+                                    <div class=" circular-progress rounded-circle fs-3 fw-bolder"> 100%</div>
 
                                 </div>
                             </div>
@@ -234,17 +235,17 @@
                                 </div>
                                 <div class=" d-flex justify-content-between align-items-center">
                                     <div class="d-flex flex-column">
-                                        <h5 class="card-title fw-bolder">
+                                        <h5 class="card-title fw-bolder fs-4">
                                             Visits
                                         </h5>
                                         <small class="card-text text-muted pb-3">
                                             Total Visits Today
                                         </small>
-                                        <span class="card-title fs-3 fw-bolder">
+                                        <span class=" fs-3 fw-bolder">
                                             400
                                         </span>
                                     </div>
-                                    <div class=" p-5 rounded-circle fs-3 fw-bolder"> 50%</div>
+                                    <div class=" circular-progress rounded-circle fs-3 fw-bolder"> 100%</div>
 
                                 </div>
                             </div>

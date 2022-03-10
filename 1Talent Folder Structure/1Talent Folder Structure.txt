@@ -1,0 +1,29 @@
+- app
+  - [+] Dashboard
+  - [+] Apply-Leave
+    - [+] components
+      - Submit-Acknowledgement-Overlay
+  - [+] Leave-Status
+    - [+] components
+      - Revoke-Confirmation-Overlay
+  - [+] My-Profile
+  - Core
+    - [+] header    // dynamically change header name
+    - [+] authentication
+      - log-in
+      - Forget-password
+      - Change-password
+      - [+] services
+    - [+] sidebar
+    - [+] guards  
+    - [+] http
+    - core.module.ts
+  - Shared
+    - [+] components
+      - Change-password    // with if condition(if navigated via email link then 2 fields new-password and confirm new-password or directly click on Change password then 3 fields old password, new-password,confirm new-password)
+      - Overlay-Model
+      - cards
+      - My-Leave-table
+    - [+] directives
+    - [+] pipes 
+    - [+] models

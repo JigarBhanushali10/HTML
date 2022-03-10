@@ -1,7 +1,11 @@
+// font
+$font-family-base: 'Be Vietnam Pro', sans-serif;
 $font-weight-bold: 600;
+
+// border-radius
 $border-radius:2rem;
+// card
 $card-border-radius:$border-radius;
-$text-muted:$text-muted-color;
 $link-text-padding-left:2.5rem;
 
 // Form Control
@@ -9,5 +13,7 @@ $link-text-padding-left:2.5rem;
 $input-focus-box-shadow : none;
 $input-font-size :.875rem;
 
-// 
-$nav-tabs-link-hover-border-color:$secondary
+// nav
+$nav-tabs-link-hover-border-color:$secondary;
+$text-muted:$text-muted-color;
+
