@@ -1,0 +1,22 @@
+.sidebar{
+    flex:0 0 280px;
+    min-width: 280px;
+    .nav-link{
+        border-left:2px solid transparent;
+        .link-text{
+            padding-left: $link-text-padding-left;
+        }
+    &:hover,&.active{
+        font-weight:700;
+        border-left:2px solid $nav-tabs-link-hover-border-color;
+        color:$secondary
+    }
+    }
+
+}
+
+// secondary-sidebar
+.secondary-sidebar{
+    flex:0 0 350px;
+    min-width: 350px;
+}

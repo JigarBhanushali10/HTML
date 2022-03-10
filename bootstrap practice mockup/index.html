@@ -15,7 +15,7 @@
     <div class="d-flex h-100">
         <!-- sidebvar : start -->
 
-        <aside class="sidebar  d-flex flex-column py-5 overflow-auto" >
+        <aside class="sidebar  d-flex flex-column py-5 overflow-auto border-end">
             <!-- 20% width -->
 
             <!-- brand icon start-->
@@ -28,31 +28,31 @@
                 <!-- nav start -->
                 <nav class=" flex-grow-1">
                     <!-- navbar start -->
-                    <ul class="navbar-nav">
-                        <li class="nav-item mb-4"><a href="" class="nav-link  d-flex align-items-center ps-5">
-                                <span class="icon icon-home"></span> <span class="link-text"
-                                    style="padding-left: 2.5rem;">Home</span>
+                    <ul class="navbar-nav font-weight-500">
+                        <li class="nav-item mb-4 text-nowrap border-start border-trasperent"><a href=""
+                                class="nav-link  d-flex align-items-center px-5 active">
+                                <span class="icon icon-home"></span> <span class="link-text">Home</span>
                             </a></li>
-                        <li class="nav-item mb-4"><a href="" class="nav-link d-flex aliign-items-center ps-5">
-                                <span class="icon icon-trophy"></span> <span class="link-text "
-                                    style="padding-left:  2.5rem;">Projects</span>
+                        <li class="nav-item mb-4 text-nowrap border-start border-trasperent"><a href=""
+                                class="nav-link d-flex aliign-items-center px-5">
+                                <span class="icon icon-trophy"></span> <span class="link-text ">Projects</span>
                             </a></li>
-                        <li class="nav-item mb-4"><a href="" class="nav-link d-flex aliign-items-center ps-5">
-                                <span class="icon icon-bank"></span> <span class="link-text"
-                                    style="padding-left: 2.5rem;">Billings</span>
+                        <li class="nav-item mb-4 text-nowrap border-start border-trasperent"><a href=""
+                                class="nav-link d-flex aliign-items-center px-5">
+                                <span class="icon icon-bank"></span> <span class="link-text">Billings</span>
                             </a></li>
-                        <li class="nav-item mb-4"><a href="" class="nav-link d-flex aliign-items-center ps-5">
-                                <span class="icon icon-user"></span> <span class="link-text"
-                                    style="padding-left: 2.5rem;">Team
+                        <li class="nav-item mb-4 text-nowrap border-start border-trasperent"><a href=""
+                                class="nav-link d-flex aliign-items-center px-5">
+                                <span class="icon icon-user"></span> <span class="link-text">Team
                                     Members</span>
                             </a></li>
-                        <li class="nav-item mb-4"><a href="" class="nav-link d-flex aliign-items-center ps-5">
-                                <span class="icon icon-bar-chart"></span> <span class="link-text"
-                                    style="padding-left: 2.5rem;">Stats</span>
+                        <li class="nav-item mb-4 text-nowrap border-start border-trasperent"><a href=""
+                                class="nav-link d-flex aliign-items-center px-5">
+                                <span class="icon icon-bar-chart"></span> <span class="link-text">Stats</span>
                             </a></li>
-                        <li class="nav-item mb-4"><a href="" class="nav-link d-flex aliign-items-center ps-5">
-                                <span class="icon icon-settings"></span> <span class="link-text"
-                                    style="padding-left: 2.5rem;">Settings</span>
+                        <li class="nav-item mb-4 text-nowrap border-start border-trasperent"><a href=""
+                                class="nav-link d-flex aliign-items-center px-5">
+                                <span class="icon icon-settings"></span> <span class="link-text">Settings</span>
                             </a></li>
                     </ul>
                     <!-- navbar start -->
@@ -67,7 +67,7 @@
                             style="width: 60px; height: 60px;">
                             <img src="assets/img/MESSI.jpg" alt="" class="rounded-3">
                         </figure>
-                        <figcaption class="profile-name">
+                        <figcaption class="profile-name fw-bold">
                             David Milan
                         </figcaption>
                     </div>
@@ -84,27 +84,27 @@
         <div class="flex-grow-1 d-flex flex-column overflow-auto">
             <!-- 80% width -->
             <!-- main container start -->
-            <div class="container-fluid  p-5 d-flex flex-grow-1" >
+            <div class="container-fluid  p-5 d-flex flex-grow-1">
                 <!-- content start -->
                 <div class=" w-70 pe-4 flex-grow-1">
                     <!-- search container start  -->
-                    <div class="d-flex mb-4 border col-9 rounded-3 p-1">
-                        <label for="search">
+                    <div class="search d-flex mb-4 border col-9 input-border-radius p-1 overflow-hidden">
+                        <label for="search" class="d-flex align-items-center">
                             <span class="icon icon-search px-2"></span>
-                        </label> <input type="search" name="" id="search" placeholder="Search for stats"
-                            class="border-0">
+                        </label> <input type="text" name="" id="search" placeholder="Search for stats"
+                            class=" form-control border-0 ">
                     </div>
                     <!-- search container end  -->
                     <!-- user greeting start -->
                     <div class="d-flex justify-content-between align-items-center pb-4">
                         <div>
-                            <h1>Hello David</h1>
+                            <h1 class="fs-2 fw-bolder">Hello David</h1>
                             <span class="text-muted">Welcom Back !</span>
                         </div>
                         <!-- filter box start -->
-                        <div class="d-flex border rounded-3 align-items-center ">
-                            <input type="search" placeholder="Filter" class="border-0 ">
-                            <span class="icon icon-filternew"></span>
+                        <div class=" filter d-flex border input-border-radius align-items-center overflow-hidden">
+                            <input type="text" placeholder="Filters" class="form-control border-0 ">
+                            <span class=" icon icon-filternew pe-4"></span>
                         </div>
                         <!-- filter box end -->
 
@@ -112,16 +112,16 @@
                     <!-- user greeting end -->
                     <!-- horizontal card start -->
 
-                    <div class="card-group bg-light border  px-3 mb-4" style="border-radius:2rem ;">
+                    <div class=" card-group card-body bg-opacity-25 bg-info  px-3 mb-4">
                         <!-- card1 start -->
                         <div class="col-4  p-3">
                             <div class="pb-4">
-                                <span class="icon icon-eye"></span>
+                                <span class="icon p-2 fs-4 rounded-circle bg-info icon-eye"></span>
                             </div>
                             <div>
-                                <span class="">View</span>
-                                <h2 class="m-0 py-2">500</h2>
-                                <span>Per Day</span>
+                                <small class="card-title text-muted ">View</small>
+                                <h2 class="m-0 py-2 fw-bolder">500</h2>
+                                <small class="text-muted">Per Day</small>
                             </div>
 
                         </div>
@@ -131,12 +131,12 @@
 
                         <div class="col-4  p-3">
                             <div class="pb-4">
-                                <span class="icon icon-compass"></span>
+                                <span class="icon p-2 fs-4 rounded-circle bg-info icon-compass"></span>
                             </div>
                             <div>
-                                <span class="">Visits</span>
-                                <h2 class="m-0 py-2">2000</h2>
-                                <span>Per Minute</span>
+                                <small class="card-title text-muted ">Visits</small>
+                                <h2 class="m-0 py-2 fw-bolder">2000</h2>
+                                <small class="text-muted">Per Minute</small>
                             </div>
 
                         </div>
@@ -145,12 +145,12 @@
 
                         <div class="col-4 p-3">
                             <div class="pb-4">
-                                <span class="icon icon-shop-window"></span>
+                                <span class="icon p-2 fs-4 rounded-circle bg-info icon-shop-window"></span>
                             </div>
                             <div>
-                                <span class="">Orders</span>
-                                <h2 class="m-0 py-2">5100</h2>
-                                <span>Per Day</span>
+                                <small class="card-title text-muted ">Orders</small>
+                                <h2 class="m-0 py-2 fw-bolder">5100</h2>
+                                <small class="text-muted">Per Day</small>
                             </div>
 
                         </div>
@@ -161,94 +161,90 @@
                     <!-- horizontal card end -->
                     <!-- individual cards start -->
                     <div class="row g-4 ">
-                        <div class="col-6">
-                            <div style="border-radius: 2rem;" class="p-3 border  bg-orange ">
-                                <div class="d-flex justify-content-end">
-                                    <span class="icon icon-arrow text-warning"></span>
-
+                        <div class="card border-0 col-6">
+                            <div class=" card-body  bg-warning bg-opacity-25 p-4 ">
+                                <div class="d-flex justify-content-end ">
+                                    <span class="icon icon-arrow text-warning arrow-down"></span>
                                 </div>
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h5 class="">
+                                <div class=" d-flex justify-content-between align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <h5 class="card-titlecard-title fw-bolder">
                                             Sales
                                         </h5>
-                                        <div class="card-text">
+                                        <small class="card-text text-muted pb-3">
                                             Total Sales Today
-                                        </div>
-                                        <span class="card-title fs-3 fw-bold ">
+                                        </small>
+                                        <span class="card-title fs-3 fw-bolder ">
                                             $500
                                         </span>
                                     </div>
-                                    <div class="w-25  border rounded-circle"></div>
+                                    <div class=" p-5 rounded-circle fs-3 fw-bolder"> 50%</div>
 
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div style="border-radius: 2rem;" class="p-3 border  bg-light">
+                        <div class="card border-0 col-6">
+                            <div class=" card-body  bg-success bg-opacity-25 p-4 ">
                                 <div class="d-flex justify-content-end">
-                                    <span class="icon icon-arrow text-success"></span>
-
+                                    <span class="icon icon-arrow text-success arrow-down"></span>
                                 </div>
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h5 class="">
+                                <div class=" d-flex justify-content-between align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <h5 class="card-title fw-bolder">
                                             Profit
                                         </h5>
-                                        <div class="card-text">
+                                        <small class="card-text text-muted pb-3">
                                             Per Day Ratio
-                                        </div>
-                                        <span class="card-title fs-3 fw-bold">
+                                        </small>
+                                        <span class="card-title fs-3 fw-bolder">
                                             $150
                                         </span>
                                     </div>
-                                    <div class="w-25  border rounded-circle"></div>
+                                    <div class=" p-5 rounded-circle fs-3 fw-bolder"> 50%</div>
 
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div style="border-radius: 2rem;" class="p-3 border  bg-light">
+                        <div class="card border-0 col-6">
+                            <div class="card-body  bg-primary bg-opacity-25  p-4">
                                 <div class="d-flex justify-content-end">
-                                    <span class="icon icon-arrow text-primary"></span>
-
+                                    <span class="icon icon-arrow text-primary arrow-up"></span>
                                 </div>
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h5 class="">
+                                <div class=" d-flex justify-content-between align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <h5 class="card-title fw-bolder">
                                             Orders
                                         </h5>
-                                        <div class="card-text">
+                                        <small class="card-text text-muted pb-3">
                                             Total Orders Today
-                                        </div>
-                                        <span class="card-title fs-3 fw-bold">
+                                        </small>
+                                        <span class="card-title fs-3 fw-bolder">
                                             1000
                                         </span>
                                     </div>
-                                    <div class="w-25  border rounded-circle"></div>
+                                    <div class=" p-5 rounded-circle fs-3 fw-bolder"> 50%</div>
 
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div style="border-radius: 2rem;" class="p-3 border  bg-light">
+                        <div class="card border-0 col-6">
+                            <div class="card-body  bg-secondary bg-opacity-10 p-4 ">
                                 <div class="d-flex justify-content-end">
-                                    <span class="icon icon-arrow"></span>
-
+                                    <span class="icon icon-arrow arrow-up"></span>
                                 </div>
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h5 class="">
+                                <div class=" d-flex justify-content-between align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <h5 class="card-title fw-bolder">
                                             Visits
                                         </h5>
-                                        <div class="card-text">
+                                        <small class="card-text text-muted pb-3">
                                             Total Visits Today
-                                        </div>
-                                        <span class="card-title fs-3 fw-bold">
+                                        </small>
+                                        <span class="card-title fs-3 fw-bolder">
                                             400
                                         </span>
                                     </div>
-                                    <div class="w-25  border rounded-circle"></div>
+                                    <div class=" p-5 rounded-circle fs-3 fw-bolder"> 50%</div>
 
                                 </div>
                             </div>
@@ -261,12 +257,12 @@
                 </div>
                 <!-- content end -->
                 <!-- vertical card start -->
-                <div class=" card bg-black text-white  border p-5 flex" style=" width: 350px; border-radius: 2rem;">
+                <div class=" card secondary-sidebar  bg-black text-white  border p-5 flex">
                     <div>
                         <h5 class="pb-5">Sales Revenue</h5>
                         <div class="d-flex flex-wrap flex-column">
                             <div class=" col-12 d-flex  align-items-center pb-5">
-                                <div style="height: max-content; width: max-content;"
+                                <div
                                     class="rounded-circle d-flex justify-content-center align-items-center    bg-light ">
                                     <span class="icon icon-sticker p-3 fs-4 text-black">
 
@@ -274,11 +270,11 @@
                                 </div>
                                 <div class=" ps-5">
                                     <div class=" fs-4 fw-bold">230k</div>
-                                    <div>Sales</div>
+                                    <small class="text-muted">Sales</small>
                                 </div>
                             </div>
                             <div class=" col-12 d-flex  align-items-center pb-5">
-                                <div style="height: max-content; width: max-content;"
+                                <div
                                     class="rounded-circle d-flex justify-content-center align-items-center    bg-light ">
                                     <span class="icon icon-customer p-3 fs-4 text-black">
 
@@ -286,11 +282,11 @@
                                 </div>
                                 <div class=" ps-5">
                                     <div class=" fs-4 fw-bold">8.549k</div>
-                                    <div>Customers</div>
+                                    <small class="text-muted">Customers</small>
                                 </div>
                             </div>
                             <div class=" col-12 d-flex  align-items-center pb-5">
-                                <div style="height: max-content; width: max-content;"
+                                <div
                                     class="rounded-circle d-flex justify-content-center align-items-center    bg-light ">
                                     <span class="icon icon-dashboard p-3 fs-4 text-black">
 
@@ -298,11 +294,11 @@
                                 </div>
                                 <div class=" ps-5">
                                     <div class=" fs-4 fw-bold">1.423k</div>
-                                    <div>Products</div>
+                                    <small class="text-muted">Products</small>
                                 </div>
                             </div>
                             <div class=" col-12 d-flex  align-items-center pb-5">
-                                <div style="height: max-content; width: max-content;"
+                                <div
                                     class="rounded-circle d-flex justify-content-center align-items-center    bg-light ">
                                     <span class="icon icon-chart p-3 fs-4 text-black">
 
@@ -310,7 +306,7 @@
                                 </div>
                                 <div class=" ps-5">
                                     <div class=" fs-4 fw-bold">$9745</div>
-                                    <div>Revenue</div>
+                                    <small class="text-muted">Revenue</small>
                                 </div>
                             </div>
                         </div>

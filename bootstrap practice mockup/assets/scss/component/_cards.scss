@@ -1,0 +1,13 @@
+.card-body,.card-group{
+    border-radius: $card-border-radius;
+}
+
+.arrow-{
+    &down{
+        transform:rotate(45deg);
+    }
+    &up{
+        transform:rotate(-45deg);
+        
+    }
+}

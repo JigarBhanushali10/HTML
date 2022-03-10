@@ -1,2 +1,13 @@
 $font-weight-bold: 600;
-$border-radius:4rem;
+$border-radius:2rem;
+$card-border-radius:$border-radius;
+$text-muted:$text-muted-color;
+$link-text-padding-left:2.5rem;
+
+// Form Control
+
+$input-focus-box-shadow : none;
+$input-font-size :.875rem;
+
+// 
+$nav-tabs-link-hover-border-color:$secondary
