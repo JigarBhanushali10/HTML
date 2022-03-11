@@ -8,15 +8,15 @@
     left    : $left;
 }
 
-// media query mixin
+    // media query mixin
 
-@mixin tablet {
-    @media (max-width: 991px) { @content; }
-}
+    @mixin tablet {
+        @media (max-width: 991px) { @content; }
+    }
 
-@mixin mobile {
-    @media (max-width: 576px) { @content; }
-}
+    @mixin mobile {
+        @media (max-width: 576px) { @content; }
+    }
 
 // media query mixin with map and if else
 

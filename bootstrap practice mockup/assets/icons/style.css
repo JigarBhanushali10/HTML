@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'app';
-  src:  url('fonts/app.eot?xlhjic');
-  src:  url('fonts/app.eot?xlhjic#iefix') format('embedded-opentype'),
-    url('fonts/app.ttf?xlhjic') format('truetype'),
-    url('fonts/app.woff?xlhjic') format('woff'),
-    url('fonts/app.svg?xlhjic#app') format('svg');
+  src:  url('fonts/app.eot?5j09qx');
+  src:  url('fonts/app.eot?5j09qx#iefix') format('embedded-opentype'),
+    url('fonts/app.ttf?5j09qx') format('truetype'),
+    url('fonts/app.woff?5j09qx') format('woff'),
+    url('fonts/app.svg?5j09qx#app') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -75,4 +75,7 @@
 }
 .icon-trophy:before {
   content: "\e99e";
+}
+.icon-toggle-right:before {
+  content: "\e90f";
 }

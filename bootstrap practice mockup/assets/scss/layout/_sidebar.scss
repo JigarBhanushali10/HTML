@@ -1,22 +1,51 @@
-.sidebar{
-    flex:0 0 280px;
-    min-width: 280px;
-    .nav-link{
-        border-left:3px solid transparent;
-        .link-text{
-            padding-left: $link-text-padding-left;
-        }
-    &:hover,&.active{
-        font-weight:700;
-        border-left:3px solid $nav-tabs-link-hover-border-color;
-        color:$secondary
+// sidebar scss
+.sidebar {
+  flex: 0 0 280px;
+  max-width: 280px;
+  transition: all 0.6s;
+  z-index: 999;
+  .nav-link {
+    border-left: 3px solid transparent;
+    transition: all 0.6s;
+    .link-text {
+      padding-left: $link-text-padding-left;
     }
+    &:hover,
+    &.active {
+      font-weight: 700;
+      border-left: 3px solid $nav-tabs-link-hover-border-color;
+      color: $secondary;
     }
+  }
+}
 
+// toggle
+.toggle-checkbox-label {
+  top: 50%;
+  right: -12px;
+  z-index: 999;
+  transition: all 0.6s;
+  transform: rotate(180deg);
+
+  .icon-toggle-right {
+    font-size: 0.75rem;
+  }
+}
+
+#toggleCheckbox:checked {
+  ~ .sidebar {
+    transform: translateX(-280px);
+    .toggle-checkbox-label {
+      transform: rotate(0deg);
+      right: -12px;
+    }
+    ~ .main {
+      filter: blur(0);
+    }
+  }
 }
 
 // secondary-sidebar
-.secondary-sidebar{
-    flex:0 0 350px;
-    min-width: 350px;
+.secondary-sidebar {
+  flex: 0 0 350px;
 }
